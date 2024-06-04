@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin cá nhân</title>
+    <link href="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #dff2f5;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #333;
+            text-align: center;
+            font-size: 25px;
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .form-control:focus {
+            border-color: #007bff;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+        }
+
+        .form-control::placeholder {
+            color: #999;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            margin-right: 10px;
+        }
+
+        .gender-group {
+            display: flex;
+            justify-content: space-around;
+            margin: 10px 0;
+        }
+
+        .dob-group {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .dob-group select {
+            width: 32%;
+        }
+
+        .btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .edit-button {
+            background-color: #28a745;
+        }
+
+        .edit-button:hover {
+            background-color: #218838;
+        }
+
+        .edit-mode .form-control:disabled {
+            background-color: #e9ecef;
+        }
+
+        .profile-pic {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .profile-pic img {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            border: 2px solid #ccc;
+        }
+
+        .profile-pic input {
+            display: none;
+        }
+
+        .profile-pic label {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .profile-pic label:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    <script>
+        function toggleEditMode() {
+            const form = document.forms['profile'];
+            const isDisabled = form.elements['email'].disabled;
+            for (let i = 0; i < form.elements.length; i++) {
+                form.elements[i].disabled = !isDisabled;
+            }
+            document.getElementById('editButton').style.display = isDisabled ? 'none' : 'block';
+            document.getElementById('saveButton').style.display = isDisabled ? 'block' : 'none';
+            document.querySelector('.profile-pic label').style.display = isDisabled ? 'block' : 'none';
+        }
+
+        function populateDOB() {
+            const form = document.forms['profile'];
+            const currentYear = new Date().getFullYear();
+            const daySelect = form.elements['day'];
+            const monthSelect = form.elements['month'];
+            const yearSelect = form.elements['year'];
+
+            for (let day = 1; day <= 31; day++) {
+                const option = document.createElement('option');
+                option.value = day;
+                option.textContent = day;
+                daySelect.appendChild(option);
+            }
+
+            const monthNames = ['Tháng 1', 'Tháng 2', 'Tháng 3', 'Tháng 4', 'Tháng 5', 'Tháng 6', 'Tháng 7', 'Tháng 8', 'Tháng 9', 'Tháng 10', 'Tháng 11', 'Tháng 12'];
+            for (let month = 0; month < 12; month++) {
+                const option = document.createElement('option');
+                option.value = month + 1;
+                option.textContent = monthNames[month];
+                monthSelect.appendChild(option);
+            }
+
+            for (let year = currentYear; year >= 1900; year--) {
+                const option = document.createElement('option');
+                option.value = year;
+                option.textContent = year;
+                yearSelect.appendChild(option);
+            }
+        }
+
+        document.addEventListener('DOMContentLoaded', populateDOB);
+
+        function loadFile(event) {
+            const image = document.getElementById('profilePic');
+            image.src = URL.createObjectURL(event.target.files[0]);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h2>Thông tin cá nhân</h2>
+        <form name="profile" action="" method="" enctype="multipart/form-data">
+            <div class="profile-pic">
+                <img id="profilePic" src="default-profile.png" alt="Profile Picture">
+                <input type="file" name="profile_picture" id="fileInput" accept="image/*" onchange="loadFile(event)" disabled>
+                <label for="fileInput" style="display: none;">Thay đổi</label>
+            </div>
+
+            <div class="form-group">
+                <input class="form-control" type="text" name="first_name" placeholder="First name" required disabled>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="last_name" placeholder="Last name" required disabled>
+            </div>
+            <div class="form-group">
+                <label>Ngày sinh</label>
+                <div class="dob-group">
+                    <select class="form-control" name="day" disabled></select>
+                    <select class="form-control" name="month" disabled></select>
+                    <select class="form-control" name="year" disabled></select>
+                </div>
+            </div>
+            <div class="form-group gender-group">
+                <label><input type="radio" name="gender" value="male" disabled> Nam</label>
+                <label><input type="radio" name="gender" value="female" disabled> Nữ</label>
+                <label><input type="radio" name="gender" value="other" disabled> Khác</label>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="text" name="username" placeholder="Username" required disabled>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="email" name="email" placeholder="Email" required disabled>
+            </div>
+            <div class="form-group">
+                <input class="form-control" type="phone" name="phone" placeholder="Phone" required disabled>
+            </div>
+            
+
+
+            <button type="button" id="editButton" class="btn edit-button" onclick="toggleEditMode()">Sửa thông tin</button>
+            <button type="submit" id="saveButton" class="btn" style="display: none;">Lưu thông tin</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,3383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>TruyenYY - Thế Giới Truyện Tiên Hiệp Huyền Ảo</title>
+
+    <meta name="description" content="Ứng dụng đọc truyện chữ online với nhiều thể loại Kiếm hiệp, Tiên hiệp, Sắc hiệp, Đô thị, Ngôn tình, Truyện Convert, Truyện YY, Truyện Dịch Hoàn Thành Full.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="fb:app_id" content="376408899112473">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index,follow" />
+    <meta name="googlebot" content="index,follow" />
+    
+    <link rel="canonical" href="https://truyenyy.pro/">
+    <meta property="og:title" content="TruyenYY - Thế Giới Truyện Tiên Hiệp Huyền Ảo"/>
+    <meta property="og:description" content="Ứng dụng đọc truyện chữ online với nhiều thể loại Kiếm hiệp, Tiên hiệp, Sắc hiệp, Đô thị, Ngôn tình, Truyện Convert, Truyện YY, Truyện Dịch Hoàn Thành Full."/>
+    <meta property="og:locale" content="vi_VN"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:url" content="https://truyenyy.pro/"/>
+    <meta property="og:site_name" content="TruyenYY"/>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://www.google-analytics.com">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://yystatic.codeprime.net/v2018/img/icon-v2018-32.png">
+    <link rel="stylesheet" href="https://yystatic.codeprime.net/desktop/css/desktop-base.a24e9df0.css" id="desktopBaseCSS">
+    <script src="https://yystatic.codeprime.net/desktop/js/desktop-base.90e96f8d.js" id="desktopBaseJS"></script>
+    <script>vex.defaultOptions.className = 'vex-theme-default'</script>
+    <script>
+        $(function () {
+            $('[data-toggle=tooltip]').tooltip();
+            $('.back-top').click(function () {
+                $('body').scrollTo(0, 80);
+                return false;
+            });
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 300) {
+                    $('.back-top').fadeIn();
+                } else {
+                    $('.back-top').fadeOut();
+                }
+            });
+
+            $('#site_main_nav').scrollToFixed({
+                marginTop: 0,
+                zIndex: 10000,
+                preFixed: function() { $(this).removeClass('mt-3'); },
+                postFixed: function() { $(this).addClass('mt-3'); }
+            });
+        });
+    </script>
+    <script>
+    DJANGO_SEARCH_URL                               = '/tim-kiem/nang-cao/';
+    DJANGO_SEARCH_NOVELS_URL                        = '/web-api/novel/search/';
+    DJANGO_SEARCH_HITS_SAVE_URL                     = '/web-api/novel/search-hits/save/';
+    DJANGO_TOP_SEARCH_HITS_URL                      = '/web-api/novel/search-hits/top/';
+    DJANGO_RECENT_USER_SEARCH_HITS_URL              = '/web-api/novel/search-hits/recent-user/';
+
+    DJANGO_DESKTOP_HOME_SLIDERS_LIST_URL            = "/web-api/desktop-home/get-novel-sliders/";
+    DJANGO_DESKTOP_HOME_TOPNAV_INFO_URL             = "/web-api/desktop-home/get-top-nav-info/";
+    DJANGO_DESKTOP_HOME_LAST_NOTIFICATIONS_URL      = "/web-api/desktop-home/get-last-notifications/";
+    DJANGO_DESKTOP_HOME_LAST_MESSAGES_URL           = "/web-api/desktop-home/get-last-messages/";
+    DJANGO_DESKTOP_HOME_MARK_READ_MESSAGES_URL      = "/web-api/desktop-home/mark-read-messages/";
+    DJANGO_DESKTOP_HOME_MARK_READ_NOTIFICATIONS_URL = "/web-api/desktop-home/mark-read-notifications/";
+    DJANGO_DESKTOP_HOME_PANEL_BOOKMARKS_LIST_URL    = "/web-api/desktop-home/get-bookmarks-panel-list/";
+    DJANGO_DESKTOP_HOME__GENRES_LIST_URL            = "/web-api/desktop-home/get-genres-list/";
+
+    DJANGO_DESKTOP_HOME_LAST_UPDATE_NOVELS_URL      = "/web-api/desktop-home/get-last-update-novels/";
+    DJANGO_DESKTOP_HOME_LAST_UPDATE_NOVELS_PAGE_URL = "/truyen-moi-cap-nhat/";
+
+    DJANGO_FEEDBACK_USER_INFO_URL                   = '/web-api/feedback/get-current-user/';
+    DJANGO_FEEDBACK_SUBMIT_CONTACT_URL              = '/web-api/feedback/submit-contact/';
+    DJANGO_FEEDBACK_SUBMIT_ISSUE_URL                = '/web-api/feedback/submit-issue/';
+    DJANGO_FEEDBACK_SUBMIT_REQUEST_NEW_NOVEL_URL    = '/web-api/feedback/submit-request-new-novel/';
+
+    DJANGO_DESKTOP_HOME_USERBOX_INFO_URL            = '/web-api/desktop-home/get-user-box-info/';
+    DJANGO_DESKTOP_USER_AVATAR_URL                  = 'https://yymedia.codeprime.net/media/profile/2024-05/thumb_avatar-3a31aca691_40x40.jpg';
+    DJANGO_DESKTOP_USER_IS_AUTH                     = true;
+</script>
+    
+    
+    
+        
+        <meta property="og:image" content="https://yystatic.codeprime.net/img/ogimages/yy-3.jpg" />
+    
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    
+    
+</head>
+<body >
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light navbar-top">
+    <div class="container">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                
+    <a class="nav-link pl-0" href="https://truyenyy.pro/" title="TruyenYY">
+        <h1 style="font-size:11px; font-weight:inherit; font-family: inherit; margin:0; padding: 0; line-height: 40px;">
+            Thế Giới Truyện Tiên Hiệp
+        </h1>
+    </a>
+
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://dauladailuc.com/" title="Blog Tiên Hiệp">Blog Tiên Hiệp</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://blog.yeutruyenchu.com/" title="Đọc truyện ngôn tình">Truyện Ngôn Tình</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://blog.dammong.com/" title="Đam mỹ ngôn tình">Ổ Len Nhỏ</a>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/apps/"><i class="iconfont icon-mobile1 icon-24"></i> Tải App Đọc Truyện</a>
+            </li>
+        </ul>
+        
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/account/"><i class="iconfont icon-profile icon-24"></i>
+                    TT. Cá Nhân
+                </a>
+            </li>
+            <li class="nav-item">
+                <div id="react-root_desktop-userbox">
+                    <div style="padding: 0 10px;">
+                        <div style="background-color: #eee; border-radius: 50%; width: 30px; height: 30px; margin-top: 5px;"></div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+<header class="container mt-3 site-header">
+    <div class="d-flex">
+        <a href="/" class="site-logo">
+            
+                <img src="https://yystatic.codeprime.net/img/logo-truyenyy-2021.svg" alt="TruyenYY Logo" loading="lazy" height="40">
+            
+        </a>
+        <div id="react-root_desktop-search" class="search" style="margin-right: -26px;">
+            <form action="/tim-kiem/nang-cao/">
+                <div class="input-group" style="width: 440px;">
+                    <input type="search" class="form-control" placeholder="Tìm tên truyện, tác giả..." aria-label="Tìm tên truyện, tác giả" name="q" autocomplete="off" onkeyup="initSearch(this)">
+                    <span class="input-group-btn">
+                        <button class="btn btn-primary" type="submit" aria-label="Tìm Kiếm Ngay"><i class="iconfont icon-search icon-24"></i></button>
+                    </span>
+                </div>
+            </form>
+            <script>
+                function initSearch(ele) {
+                    window.sessionStorage.setItem('currentSearchKeyword', ele.value);
+                }
+            </script>
+        </div>
+        <div id="react-root_desktop-top-nav" style="width: 260px; display: flex; justify-content: flex-end;">
+            <div style="width: 250px; height: 40px; background-color: #f2f4f5; border-radius: 4px;"></div>
+        </div>
+    </div>
+</header>
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-main navbar-fancy mt-3" id="site_main_nav" style="z-index: 10000;">
+    <div class="container">
+        <ul class="navbar-nav nav-fancy mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link px-3" href="/" title="Trang Chủ"><i class="iconfont icon-home"></i></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/kim-thanh-bang/">Kim Thánh Bảng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/sang-tac-bang/">Sáng Tác Bảng</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/truyen-full/">Truyện Full</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="/truyen-moi-cap-nhat/" title="Truyện Mới Cập Nhật">Mới Cập Nhật</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/truyen-dich-yy/" title="Truyện Dịch">Truyện Dịch</a>
+            </li>
+
+            
+                <li class="nav-divider"></li>
+                <li class="nav-item">
+                    
+                    <a class="nav-link" href="/dien-dan/" title="Diễn Đàn Thảo Luận Truyện">
+                        Diễn Đàn <span class="badge badge-success">99+</span>
+                    </a>
+                </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" aria-label="Thêm">
+                    <i class="iconfont icon-list"></i>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/tieu-thuyet-chon-loc/">Truyện Chất Lượng Cao</a>
+                    <a class="dropdown-item" href="/truyen-moi-dang/">Truyện Mới Đăng</a>
+                    <a class="dropdown-item" href="/truyen-de-xuat/">Truyện Đề Xuất</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="/tim-kiem/">Danh Sách Thể Loại</a>
+                </div>
+            </li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="/page/huong-dan-su-dung/" target="_blank"><i class="iconfont icon-help"></i> Hướng Dẫn</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/manager/" target="_blank"><i class="iconfont icon-upload"></i> Đăng Truyện</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+
+
+<div class="container focus-box mt-4">
+    <div class="row">
+        <div class="col-3" id="react-root_desktop-home-genres" style="position: static;">
+            <div class="top-genres bg-dark">
+                
+                    
+                    
+                        <a href="/truyen-huyen-huyen/" class="genre">
+                            
+                                <i class="yyicon icon-dragon"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Huyền Huyễn</div>
+                                <div class="num">6181</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-kiem-hiep/" class="genre">
+                            
+                                <i class="yyicon icon-sword"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Kiếm Hiệp</div>
+                                <div class="num">1592</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-lich-su/" class="genre">
+                            
+                                <i class="yyicon icon-history"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Lịch Sử</div>
+                                <div class="num">787</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-ngon-tinh/" class="genre">
+                            
+                                <i class="yyicon icon-women"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Ngôn Tình</div>
+                                <div class="num">8915</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-tien-hiep/" class="genre">
+                            
+                                <i class="yyicon icon-fantasy"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Tiên Hiệp</div>
+                                <div class="num">3752</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-di-gioi/" class="genre">
+                            
+                                <i class="yyicon icon-moon"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Dị Giới</div>
+                                <div class="num">2421</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-do-thi/" class="genre">
+                            
+                                <i class="yyicon icon-urban"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Đô Thị</div>
+                                <div class="num">5543</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-huyen-ao/" class="genre">
+                            
+                                <i class="yyicon icon-supernatural"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Huyền Ảo</div>
+                                <div class="num">3323</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-trinh-tham/" class="genre">
+                            
+                                <i class="yyicon icon-animal"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Trinh Thám</div>
+                                <div class="num">557</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-co-dai/" class="genre">
+                            
+                                <i class="yyicon icon-clan"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Cổ Đại</div>
+                                <div class="num">1653</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-he-thong/" class="genre">
+                            
+                                <i class="yyicon icon-yinyang6"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Hệ Thống</div>
+                                <div class="num">1407</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-khoa-huyen/" class="genre">
+                            
+                                <i class="yyicon icon-science-fiction"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Khoa Huyễn</div>
+                                <div class="num">1638</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-quan-su/" class="genre">
+                            
+                                <i class="yyicon icon-military"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Quân Sự</div>
+                                <div class="num">588</div>
+                            </div>
+                        </a>
+                    
+                        <a href="/truyen-vong-du/" class="genre">
+                            
+                                <i class="yyicon icon-gamepad"></i>
+                            
+                            <div class="ml-2">
+                                <div class="name">Võng Du</div>
+                                <div class="num">1582</div>
+                            </div>
+                        </a>
+                    
+                
+            </div>
+        </div>
+        <div class="col-6">
+            <div id="react-root_desktop-home-slider" class="home-slider">
+                <div style="background-color: #f2f4f5; width: 100%; height: 100%;"></div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="text-center border-0 tip-box">
+                <div class="h4">Bạn muốn đăng truyện lên TruyenYY?</div>
+                <p>Chúng tôi sẵn sàng hỗ trợ bạn bất cứ lúc nào. Hãy nhấn vào lựa chọn bên dưới.</p>
+                <p>
+                    <a href="https://truyenyy.pro/page/huong-dan-dang-truyen/" class="btn btn-primary btn-block">Hướng Dẫn Đăng Truyện</a>
+                    <a href="/manager/" class="btn btn-primary btn-block">Trung Tâm Xuất Bản</a>
+                </p>
+                <p><em>(Cần đăng nhập để xem thông tin)</em></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container home-grid mt-3">
+    <div class="row">
+        <div class="col-3">
+            <div class="card card-home card-bg-dark">
+                <h3 class="card-header">
+                    <strong>Truyện Mới Cập Nhật</strong>
+                    <a href="/truyen-moi-cap-nhat/" title="Danh Sách Đầy Đủ"
+                       class="card-more">
+                        <i class="iconfont icon-arrow-right"></i>
+                    </a>
+                </h3>
+                <ul class="list-unstyled heading-list">
+                    
+                        
+                            <li id="lastUpdateNovel-63139">
+                                <div class="d-flex">
+                                    <a href="/truyen/sau-tan-the-ta-khong-ngung-tien-hoa/" class="name mr-1">Sau Tận Thế, Ta Không Ngừng Tiến Hóa</a>
+                                    
+                                        <a href="/truyen-mat-the/" class="genre">Mạt Thế</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/loi-ran-cua-dat-troi/">Lời Răn Của Đất Trời</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-65082">
+                                <div class="d-flex">
+                                    <a href="/truyen/ta-co-999-loai-di-nang/" class="name mr-1">Ta Có 999 Loại Dị Năng</a>
+                                    
+                                        <a href="/truyen-di-nang/" class="genre">Dị Năng</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/vu-dich/">Vụ địch</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-65496">
+                                <div class="d-flex">
+                                    <a href="/truyen/huyen-lenh-de-su-trieu-khang/" class="name mr-1">Huyện Lệnh Đế Sư - Triệu Khang</a>
+                                    
+                                        <a href="/truyen-huyen-huyen/" class="genre">Huyền Huyễn</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/dao-thap-cuu/">Đao Thập Cửu</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-65693">
+                                <div class="d-flex">
+                                    <a href="/truyen/gia-toc-tu-tien-ta-tro-thanh-tran-toc-linh-thu/" class="name mr-1">Gia Tộc Tu Tiên: Ta Trở Thành Trấn Tộc Linh Thú</a>
+                                    
+                                        <a href="/truyen-tien-hiep/" class="genre">Tiên Hiệp</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/trieu-bac-hai/">Triều Bắc Hải</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-66079">
+                                <div class="d-flex">
+                                    <a href="/truyen/ta-ngu-lien-co-the-truong-sinh-ban-dich/" class="name mr-1">Ta Ngủ Liền Có Thể Trường Sinh (Bản Dịch)</a>
+                                    
+                                        <a href="/truyen-huyen-huyen/" class="genre">Huyền Huyễn</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/nhat-chich-luu-lien-3-hao/">Nhất Chích Lưu Liên 3 Hào</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-65694">
+                                <div class="d-flex">
+                                    <a href="/truyen/hieu-hoa-dich-tu-tien-cuong-gia/" class="name mr-1">Hiệu hoa đích tu tiên cường giả</a>
+                                    
+                                        <a href="/truyen-tien-hiep/" class="genre">Tiên Hiệp</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/lac-diep-phu-tran/">Lạc diệp phù trần</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-65472">
+                                <div class="d-flex">
+                                    <a href="/truyen/mat-the-sinh-hoa-nguy-co/" class="name mr-1">Mạt Thế - Sinh Hoá Nguy Cơ</a>
+                                    
+                                        <a href="/truyen-mat-the/" class="genre">Mạt Thế</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/han-nhuoc-tuyet/">Hàn Nhược Tuyết</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-66162">
+                                <div class="d-flex">
+                                    <a href="/truyen/ta-tu-tien-trong-the-gioi-thuc-tinh-gia/" class="name mr-1">Ta Tu Tiên trong thế giới Thức Tỉnh Giả</a>
+                                    
+                                        <a href="/truyen-do-thi/" class="genre">Đô Thị</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/td-2/">TD</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-59946">
+                                <div class="d-flex">
+                                    <a href="/truyen/cuc-pham-phong-luu-gia-thai-giam/" class="name mr-1">Cực Phẩm Phong Lưu Giả Thái Giám</a>
+                                    
+                                        <a href="/truyen-lich-su/" class="genre">Lịch Sử</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/hoa-vuong-chi-vuong/">Hỏa Vương Chi Vương</a>
+                                </div>
+                            </li>
+                        
+                            <li id="lastUpdateNovel-64013">
+                                <div class="d-flex">
+                                    <a href="/truyen/truong-sinh-quy-tien-ban-dich/" class="name mr-1">Trường Sinh Quỷ Tiên (Bản Dịch)</a>
+                                    
+                                        <a href="/truyen-tien-hiep/" class="genre">Tiên Hiệp</a>
+                                    
+                                </div>
+                                <div class="d-flex">
+                                    <a class="author" href="/tac-gia/thuc-chuc-trung-chi-de/">Thực Chúc Trung Chi Đệ</a>
+                                </div>
+                            </li>
+                        
+                    
+                </ul>
+                <div class="card-body py-0 px-3 mb-2 mt-auto">
+                    <a href="/truyen-moi-cap-nhat/" class="small">
+                        Xem Thêm <i class="iconfont icon-arrow-right icon-8"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+            <div class="card card-home">
+                <h3 class="card-header">
+                    Lựa Chọn Của Biên Tập Viên
+                </h3>
+                <div class="row">
+                    
+                    
+                        
+                            <div class="col-6">
+                                <div class="novel-item">
+                                    <a href="/truyen/ta-mo-phong-con-duong-truong-sinh-trong-nhom-chat-dich/" class="cover book-shadow" aria-label="Ta Mô Phỏng Con Đường Trường Sinh Trong Nhóm Chat (Dịch)">
+                                        
+                                            <img
+                                                data-srcset="https://yymedia.codeprime.net/media/novels/202309/thumb_ta-mo-phong-con-duong-truong-sinh-trong-nhom-chat--870c4222c2_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202309/thumb_ta-mo-phong-con-duong-truong-sinh-trong-nhom-chat--870c4222c2_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202309/ta-mo-phong-con-duong-truong-sinh-trong-nhom-chat--870c4222c2.jpg 2x"
+                                                data-sizes="auto"
+                                                alt=""
+                                                width="80"
+                                                height="120"
+                                                class="lazy zoom-me"
+                                            >
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4><a href="/truyen/ta-mo-phong-con-duong-truong-sinh-trong-nhom-chat-dich/">Ta Mô Phỏng Con Đường Trường Sinh Trong Nhóm Chat (Dịch)</a></h4>
+                                        <div>
+                                            <a href="/tac-gia/non-lang-nhu-mong/" class="author">Nộn Lăng Như Mộng</a>
+                                            
+                                            <i class="iconfont icon-full icon-24 text-info ml-1"></i>
+                                        </div>
+                                        <span class="stat text-danger">1329 <small>Chương</small></span>
+                                        <span class="stat text-primary">330023 <small>Đọc</small></span>
+                                        
+                                            <blockquote class="desc">Có một ngày, Vương Bình tham gia vào một group chat người xuyên không - nơi mà mỗi thành viên ngẫu nhiên xuyên đến những thế giới khác nhau và nhận được bàn tay vàng thuộc về riêng mình.
+
+ 
+
+Vương Bình cứ nghĩ mình đã bước lên đỉnh cao nhân sinh thì bỗng...
+
+ 
+
+“Ting, thành viên -1. Trần Khang cùng tham gia group với ngươi đã tử vong, không thể sống qua mười phút, mong các thành viên lấy đó làm gương.”
+
+ 
+
+Vương Bình chết lặng, lập tức hiểu ra group chat này là một cái hố lớn, xác suất thành viên tử vong cực cao, thậm chí vừa đặt chân xuống đất đã bay màu.</blockquote>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    
+                        
+                            <div class="col-6">
+                                <div class="novel-item">
+                                    <a href="/truyen/ta-than-phan-dai-dao-bi-muoi-muoi-dac-ky-cong-khai-dich/" class="cover book-shadow" aria-label="Ta Thân Phận Đại Đạo Bị Muội Muội Đắc Kỷ Công Khai (Dịch)">
+                                        
+                                            <img
+                                                data-srcset="https://yymedia.codeprime.net/media/novels/202301/thumb_ta-than-phan-dai-dao-bi-muoi-muoi-dac-ky-cong-khai-d31b23af11_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202301/thumb_ta-than-phan-dai-dao-bi-muoi-muoi-dac-ky-cong-khai-d31b23af11_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202301/ta-than-phan-dai-dao-bi-muoi-muoi-dac-ky-cong-khai-d31b23af11.jpg 2x"
+                                                data-sizes="auto"
+                                                alt=""
+                                                width="80"
+                                                height="120"
+                                                class="lazy zoom-me"
+                                            >
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4><a href="/truyen/ta-than-phan-dai-dao-bi-muoi-muoi-dac-ky-cong-khai-dich/">Ta Thân Phận Đại Đạo Bị Muội Muội Đắc Kỷ Công Khai (Dịch)</a></h4>
+                                        <div>
+                                            <a href="/tac-gia/dai-duong-chung-tho-dau/" class="author">Đại Đường Chủng Thổ Đậu</a>
+                                            
+                                            <i class="iconfont icon-full icon-24 text-info ml-1"></i>
+                                        </div>
+                                        <span class="stat text-danger">2368 <small>Chương</small></span>
+                                        <span class="stat text-primary">307569 <small>Đọc</small></span>
+                                        
+                                            <blockquote class="desc">Lý Nguyên xuyên đến thế giới Hồng Hoang, thành công kích hoạt hệ thống Tu Luyện Một Vạn Lần Là Đột Phá.
+
+Mặc kệ hắn tu luyện công pháp gì, chỉ cần tu luyện một vạn lần là có thể đột phá một cảnh giới.
+
+Kết quả chỉ dùng thời gian năm năm, hắn đã từ một người phàm tục tu luyện đến cảnh giới đại đạo chí cao.
+
+Từ đó về sau, Lý Nguyên sống cuộc sống của một con cá mặn, cuộc sống trôi qua rất chi là thoải mái.</blockquote>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    
+                        
+                            <div class="col-6">
+                                <div class="novel-item">
+                                    <a href="/truyen/bat-dau-tu-lau-chu-ta-co-mot-dao-kinh-thien-ha/" class="cover book-shadow" aria-label="Bắt Đầu Từ Lâu Chủ, Ta Có Một Đao Kinh Thiên Hạ">
+                                        
+                                            <img
+                                                data-srcset="https://yymedia.codeprime.net/media/novels/202307/thumb_bat-dau-tu-lau-chu-ta-co-mot-dao-kinh-thien-ha-d52faa4c7c_80x120.png 1x,https://yymedia.codeprime.net/media/novels/202307/thumb_bat-dau-tu-lau-chu-ta-co-mot-dao-kinh-thien-ha-d52faa4c7c_120x180.png 1.5x, https://yymedia.codeprime.net/media/novels/202307/bat-dau-tu-lau-chu-ta-co-mot-dao-kinh-thien-ha-d52faa4c7c.png 2x"
+                                                data-sizes="auto"
+                                                alt=""
+                                                width="80"
+                                                height="120"
+                                                class="lazy zoom-me"
+                                            >
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4><a href="/truyen/bat-dau-tu-lau-chu-ta-co-mot-dao-kinh-thien-ha/">Bắt Đầu Từ Lâu Chủ, Ta Có Một Đao Kinh Thiên Hạ</a></h4>
+                                        <div>
+                                            <a href="/tac-gia/thang-dau-yen-dan/" class="author">Thăng Đấu Yên Dân</a>
+                                            
+                                            
+                                        </div>
+                                        <span class="stat text-danger">812 <small>Chương</small></span>
+                                        <span class="stat text-primary">116807 <small>Đọc</small></span>
+                                        
+                                            <blockquote class="desc">#cơtrí #sátphạt #hắcthủ ....
+
+Vừa mới xuyên qua không bao lâu, Tô Thần liền bị ép trở thành lâu chủ của Kim Phong Tế Vũ Lâu.
+
+Làm khôi lỗi? Làm kẻ chết thay sao?
+
+Đây là ý nghĩ đầu tiên của hắn.</blockquote>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    
+                        
+                            <div class="col-6">
+                                <div class="novel-item">
+                                    <a href="/truyen/quay-hang-via-he-cua-ta-cuc-manh/" class="cover book-shadow" aria-label="Quầy Hàng Vỉa Hè Của Ta Cực Mạnh">
+                                        
+                                            <img
+                                                data-srcset="https://yymedia.codeprime.net/media/novels/202305/thumb_quay-hang-via-he-cua-ta-cuc-manh-3824028714_80x120.png 1x,https://yymedia.codeprime.net/media/novels/202305/thumb_quay-hang-via-he-cua-ta-cuc-manh-3824028714_120x180.png 1.5x, https://yymedia.codeprime.net/media/novels/202305/quay-hang-via-he-cua-ta-cuc-manh-3824028714.png 2x"
+                                                data-sizes="auto"
+                                                alt=""
+                                                width="80"
+                                                height="120"
+                                                class="lazy zoom-me"
+                                            >
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4><a href="/truyen/quay-hang-via-he-cua-ta-cuc-manh/">Quầy Hàng Vỉa Hè Của Ta Cực Mạnh</a></h4>
+                                        <div>
+                                            <a href="/tac-gia/dich-thanh-phong/" class="author">Dịch Thanh Phong</a>
+                                            
+                                            
+                                        </div>
+                                        <span class="stat text-danger">1909 <small>Chương</small></span>
+                                        <span class="stat text-primary">391501 <small>Đọc</small></span>
+                                        
+                                            <blockquote class="desc">Địa Cầu tiến vào thời đại khôi phục linh khí, nhân loại bắt đầu thức tỉnh dị năng!
+
+Giang Nam may mắn thức tỉnh hệ thống hàng vỉa hè mạnh nhất. 
+
+Dược tề đại lực? Đậu nành giải độc? Anh đào may mắn?
+
+Cung không đủ cầu!
+
+Thần hào đỉnh cấp thế giới, nhà giàu nhất, streamer nổi tiếng, cường giả đỉnh cấp nhao nhao chạy tới cầu mua.</blockquote>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    
+                        
+                            <div class="col-6">
+                                <div class="novel-item">
+                                    <a href="/truyen/khoi-nghiep-ganh-vac-tap-doan-tram-ty-ban-dich/" class="cover book-shadow" aria-label="Khởi Nghiệp Gánh Vác Tập Đoàn Trăm Tỷ (Bản Dịch)">
+                                        
+                                            <img
+                                                data-srcset="https://yymedia.codeprime.net/media/novels/202402/thumb_khoi-nghiep-ganh-vac-tap-doan-tram-ty-ban-dich-f8e827daad_80x120.png 1x,https://yymedia.codeprime.net/media/novels/202402/thumb_khoi-nghiep-ganh-vac-tap-doan-tram-ty-ban-dich-f8e827daad_120x180.png 1.5x, https://yymedia.codeprime.net/media/novels/202402/khoi-nghiep-ganh-vac-tap-doan-tram-ty-ban-dich-f8e827daad.png 2x"
+                                                data-sizes="auto"
+                                                alt=""
+                                                width="80"
+                                                height="120"
+                                                class="lazy zoom-me"
+                                            >
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4><a href="/truyen/khoi-nghiep-ganh-vac-tap-doan-tram-ty-ban-dich/">Khởi Nghiệp Gánh Vác Tập Đoàn Trăm Tỷ (Bản Dịch)</a></h4>
+                                        <div>
+                                            <a href="/tac-gia/bang-luong-ninh-mong-tra/" class="author">Băng Lương Nịnh Mông Trà</a>
+                                            
+                                            
+                                        </div>
+                                        <span class="stat text-danger">284 <small>Chương</small></span>
+                                        <span class="stat text-primary">43369 <small>Đọc</small></span>
+                                        
+                                            <blockquote class="desc">“Con à, nhà chúng ta rất nghèo, con ở bên ngoài làm việc phải cúi đầu đừng gây hoạ, biết chưa hả?” Cha mẹ buồn bã nói.
+
+Trương Dịch lập tức ném một bao tải tiền thật to lên bàn: “Nhà ta không nghèo, con cũng chẳng giả vờ, con phải thể hiện mình là đại gia trăm tỷ.”
+
+---- Lời người dịch: Truyện siêu vả mặt, sảng văn, không đặt nặng tâm lý khi xem. Ai muốn giải trí sau những giờ làm việc căng thẳng, vui lòng ghé hố, chúc mừng bạn đã đến đúng địa chỉ rồi đấy ạ.</blockquote>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    
+                        
+                            <div class="col-6">
+                                <div class="novel-item">
+                                    <a href="/truyen/trung-sinh-yeu-duong-cung-voi-thien-hau-gioi-ca-hat/" class="cover book-shadow" aria-label="Trùng Sinh Yêu Đương Cùng Với Thiên Hậu Giới Ca Hát">
+                                        
+                                            <img
+                                                data-srcset="https://yymedia.codeprime.net/media/novels/202403/thumb_trung-sinh-yeu-duong-cung-voi-thien-hau-gioi-ca-ha-95859e3245_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202403/thumb_trung-sinh-yeu-duong-cung-voi-thien-hau-gioi-ca-ha-95859e3245_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202403/trung-sinh-yeu-duong-cung-voi-thien-hau-gioi-ca-ha-95859e3245.jpg 2x"
+                                                data-sizes="auto"
+                                                alt=""
+                                                width="80"
+                                                height="120"
+                                                class="lazy zoom-me"
+                                            >
+                                        
+                                    </a>
+                                    <div class="info">
+                                        <h4><a href="/truyen/trung-sinh-yeu-duong-cung-voi-thien-hau-gioi-ca-hat/">Trùng Sinh Yêu Đương Cùng Với Thiên Hậu Giới Ca Hát</a></h4>
+                                        <div>
+                                            <a href="/tac-gia/ke-ky-mieu/" class="author">Kê Kỵ Miêu</a>
+                                            
+                                            
+                                        </div>
+                                        <span class="stat text-danger">183 <small>Chương</small></span>
+                                        <span class="stat text-primary">16718 <small>Đọc</small></span>
+                                        
+                                            <blockquote class="desc">Lộ An Chi trùng sinh có tình một đêm với người khác. Hắn không cho rằng đó là ràng buộc trong cuộc đời mình.
+
+Trong cuộc sống mới, hắn kiếm tiền bằng nghề viết tiểu thuyết, bắt đầu hành trình du ngoạn khắp thế gian.
+
+Thế nhưng có một ngày, Thiên Hậu giới âm nhạc Trương Tố Hinh đã thoái ẩn ba năm trước, mang theo một đứa con gái hơn hai tuổi đến tìm hắn.
+
+Cuộc đời hắn xuất hiện bước ngoặt và mở ra một chương mới.</blockquote>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container headline-ranking mt-3">
+    <div class="row">
+        <div class="col-3">
+            <div class="card card-home card-bg-dark">
+                <h3 class="card-header">
+                    Sáng Tác Nhiều Người Đọc
+                    <a href="/sang-tac-bang/" target="_blank" class="card-more"><i class="iconfont icon-arrow-right icon-14"></i></a>
+                </h3>
+                <div class="card-body">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="65472"
+                                 data-title="Mạt Thế - Sinh Hoá Nguy Cơ"
+                                 data-author="Hàn Nhược Tuyết"
+                                 data-url="/truyen/mat-the-sinh-hoa-nguy-co/"
+                                 data-desc="Truyện sáng tác, do tác giả người Việt viết, không phải truyện dịch, cải biên, đồng nhân hay remake gì cả. Truyện đã hoàn thành, không drop. Nhân vật chính làm người xảo quyệt nham hiểm, chuyên lừa gạt kẻ khác để đạt thành mục đích, không thánh mẫu hay nhân từ, không buff bẩn. Truyện có sắc nhưng nhạt …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202403/thumb_mat-the-sinh-hoa-nguy-co-13b42659e0_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="56641"
+                                 data-title="Đến Dị Giới: Ta Làm Thành Chủ"
+                                 data-author="tiêu dao"
+                                 data-url="/truyen/den-di-gioi-ta-lam-thanh-chu/"
+                                 data-desc="Truyện viết để tự đọc, không chào đón mấy người hay tinh tướng tự cao, bô bô cái gì mà thuần việt hay không thuần việt! Truyện viết để tự đọc!!!!@ Truyện viết tự đọc, cho nên tác viết cái gì thì kệ tác! Nói rõ ràng như vậy, còn nếu đã cố nhảy vô đọc rồi chửi bới tác …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202212/thumb_den-di-gioi-ta-lam-thanh-chu-fd90cf9553_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="50402"
+                                 data-title="Khí Vận Hệ Thống"
+                                 data-author="Ám Dạ Hành"
+                                 data-url="/truyen/khi-van-he-thong/"
+                                 data-desc="Nhân vật chính cẩn thận, không quá yy bá đạo, đồng cảnh giới vô địch, có thể vượt đại cảnh giới giết địch nhưng mọi sự vẫn suy tính rồi làm. Main rất vô sỉ vì là con cháu đệ nhất thế gia ở Đông Vực. Sinh ra là con cháu thế gia Tần Vũ triệt để lợi dụng điểm …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202111/thumb_khi-van-he-thong-f485fcd8da_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="55063"
+                                 data-title="Mình Chỉ Muốn Làm Nam Sinh Bình Thường"
+                                 data-author="nam thần chiến hữu"
+                                 data-url="/truyen/ta-chi-muon-lam-nam-nhan-binh-thuong/"
+                                 data-desc="Chuyện kể về một nam sinh rất đặc biệt. Từ khi sinh ra, cậu đã sở hữu cho mình rất nhiều ưu điểm vượt trội: từ tính cách cho đến nhan sắc,... tất cả mọi thứ của cậu đều vô cùng hoàn hảo. Do vậy mà những cô gái xinh đẹp rất hay để ý tới cậu, thậm chí các …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202207/thumb_ta-chi-muon-lam-nam-nhan-binh-thuong-9e39ce3649_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="17620"
+                                 data-title="Thiên Mệnh Khả Biến"
+                                 data-author="Hắc Long (Hoàng Long)"
+                                 data-url="/truyen/thien-menh-kha-bien/"
+                                 data-desc="Số tài khoản Donate: 106006708601 Vietinbank Thiên Mệnh Khả Biến là 1 cuốn Biên Niên Sử, chứ không phải 1 bộ tiểu thuyết. Cuốn Biên Niên Sử này kể về 1 thế giới xoay quanh Tri thức, nơi chỉ cần sở hữu Tri thức là có sức mạnh. Thế giới ấy có 7 Đại Thư viện, nơi chứa tất cả …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/2019-04/thumb_1744f6042a_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="65573"
+                                 data-title="Vô Cực Tiên Đế"
+                                 data-author="Thiên Cơ Lão Nhân"
+                                 data-url="/truyen/ta-tai-tien-gioi-dap-dia-chung-de/"
+                                 data-desc="Sinh ra là Tam Hoàng Tử của một Tiên Quốc cấp 4, Phù Quang Tiên Quốc, có lão tổ Hợp Thể kỳ đỉnh phong tọa trấn. Nhưng tình thế bức bách buộc Lý Trường Ca phải cẩu để bảo toàn tính mạng cho đến khi có thể gia nhập Thanh Vân tông. Thiên đại cơ duyên đến, hắn được Lục …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202404/thumb_ta-tai-tien-gioi-dap-dia-chung-de-f1dddcf118_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="64915"
+                                 data-title="Vùng đất Tự Do"
+                                 data-author="Vũ Khúc"
+                                 data-url="/truyen/vung-dat-tu-do/"
+                                 data-desc="Bối cảnh Năm 2100, một cuộc chiến tranh hạt nhân đã xóa bỏ hầu hết các quốc gia. Cả thế giới chỉ còn 50 triệu người sống sót. Những người còn sống đã dồn về trung tâm Bắc Mỹ để thành lập nên một khu vực được gọi là Vùng đất Tự Do, trong vùng đất này không có nhà …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202401/thumb_vung-dat-tu-do-0d67d1f5ed_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="43127"
+                                 data-title="Đệ Nhất Thần Thâu"
+                                 data-author="Hắc Thư Sinh"
+                                 data-url="/truyen/de-nhat-than-thau/"
+                                 data-desc="Thiên đạo có phải là tối thượng? Lão thiên...cho dù là ngươi lão tử cũng muốn cướp .... Vạn vật sinh linh vốn từ thiên địa sinh ra, hàng ngàn vạn năm bao nhiêu kẻ muốn nghịch thiên đều có chung một kết cục. Định mệnh đó đã thay đổi từ khi một tạo vật được sinh ra, vạn giới …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202206/thumb_de-nhat-than-thau-b9e7ca6049_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="60952"
+                                 data-title="Sủng Thú Sư"
+                                 data-author="Bá Hậu Quan Nhân"
+                                 data-url="/truyen/sung-thu-su/"
+                                 data-desc="Sủng Thú Sư. Là những con người sở hữu khả năng đặc biệt, giúp bản thân có thể chế ngự ma thú, dùng chúng để chiến đấu hoặc một vật trung gian giúp Sủng Thú Sư tu luyện, từ đó sở hữu sức mạnh ngang bằng với ma thú, di sơn đảo hải, thống ngự đất trời. Theo những ghi …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202306/thumb_sung-thu-su-7fcf7dc843_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                            <div class="swiper-slide rounded"
+                                 data-novel-id="59127"
+                                 data-title="Xuyên qua làm nhân vật quần chúng, vô tình dạy một đám đồ đệ thành Thánh nhân"
+                                 data-author="Nghịch Tử"
+                                 data-url="/truyen/xuyen-qua-lam-nhan-vat-quan-chung-vo-tinh-day-mot-dam-do-de-thanh-thanh-nhan/"
+                                 data-desc="Cường giả tuyệt thế tưởng mình là phàm nhân thì nhiều, nhưng nếu lần này thực sự là một người phàm thuần tuý 100% thì sẽ ra sao? Nguyễn Đông Thanh xuyên không đến Huyền Hoàng giới. Song, hắn không có hệ thống theo chân, không thể tu hành, thậm chí còn chỉ biết chữ đực chữ cái. Hắn văn …"
+                                 
+                                    style="background-image:url('https://yymedia.codeprime.net/media/novels/202307/thumb_xuyen-qua-lam-nhan-vat-quan-chung-vo-tinh-day-mot--26a35f6837_80x120.jpg')"
+                                 
+                            ></div>
+                            
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    
+                    <div class="mini-swiper">
+                        <div class="book-title"><a href="/truyen/mat-the-sinh-hoa-nguy-co/" target="_blank">Mạt Thế - Sinh Hoá Nguy Cơ</a></div>
+                        <div class="book-author">Hàn Nhược Tuyết</div>
+                        <div class="book-desc">Truyện sáng tác, do tác giả người Việt viết, không phải truyện dịch, cải biên, đồng nhân hay remake gì cả. Truyện đã hoàn thành, không drop. Nhân vật chính làm người xảo quyệt nham hiểm, chuyên lừa gạt kẻ khác để đạt thành mục đích, không thánh mẫu hay nhân từ, không buff bẩn. Truyện có sắc nhưng nhạt …</div>
+                        <div class="mt-2"><a href="/truyen/mat-the-sinh-hoa-nguy-co/" class="btn btn-primary btn-sm" target="_blank">Đọc Thử</a></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card card-home">
+                <h3 class="card-header">
+                    Kim Thánh Bảng
+                    <a href="/kim-thanh-bang/" class="card-more"><i class="iconfont icon-arrow-right icon-14"></i></a>
+                </h3>
+                <ul class="heading-list list-unstyled">
+                    
+                    
+                    
+                        
+                            <li class="no1">
+                                <span class="num num1">1</span>
+                                <div class="info">
+                                    <a href="/truyen/quy-di-tu-tien-the-gioi-dich/" class="name">Quỷ Dị Tu Tiên Thế Giới (Dịch)</a>
+                                    <span class="count">1274 Chương</span>
+                                    <div class="d-flex flex-column">
+                                        <a href="/tac-gia/long-xa-chi/" class="count mr-2 align-self-start" style="max-width: 100%;">Long Xà Chi</a>
+                                        
+                                            <a href="/truyen-huyen-huyen/" class="count genre align-self-start">Huyền Huyễn</a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="/truyen/quy-di-tu-tien-the-gioi-dich/" class="cover" aria-label="Quỷ Dị Tu Tiên Thế Giới (Dịch)">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202403/thumb_quy-di-tu-tien-the-gioi-dich-0aeae041c1_60x90.jpg 1x,https://yymedia.codeprime.net/media/novels/202403/thumb_quy-di-tu-tien-the-gioi-dich-0aeae041c1_120x180.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="60"
+                                            height="90"
+                                            class="lazy"
+                                        >
+                                    
+                                </a>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num2">2</span>
+                                <a href="/truyen/thoi-gian-chi-chu-ban-dich/" class="name">Thời Gian Chi Chủ (Bản Dịch)</a>
+                                <span class="count">830</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num3">3</span>
+                                <a href="/truyen/trong-sinh-quat-khoi-huong-giang-dich/" class="name">Trọng Sinh Quật Khởi Hương Giang (Dịch)</a>
+                                <span class="count">921</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num4">4</span>
+                                <a href="/truyen/ta-phai-len-lop-lai-cho-the-gioi-nay-dich/" class="name">Ta Phải Lên Lớp Lại Cho Thế Giới Này (Dịch)</a>
+                                <span class="count">1038</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num5">5</span>
+                                <a href="/truyen/nguoi-choi-so-4-ban-dich/" class="name">Người Chơi Số 4 (Bản Dịch)</a>
+                                <span class="count">513</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num6">6</span>
+                                <a href="/truyen/ta-o-chu-thien-rat-dieu-thap-dich/" class="name">Ta Ở Chư Thiên Rất Điệu Thấp (Dịch)</a>
+                                <span class="count">1437</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num7">7</span>
+                                <a href="/truyen/quy-di-kho-giet-that-co-loi-ta-moi-that-su-la-bat-tu-dich/" class="name">Quỷ Dị Khó Giết? Thật Có Lỗi, Ta Mới Thật Sự Là Bất Tử ( Dịch )</a>
+                                <span class="count">698</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num8">8</span>
+                                <a href="/truyen/ta-o-nhan-gian-lap-dia-thanh-tien-ban-dich/" class="name">Ta Ở Nhân Gian Lập Địa Thành Tiên (Bản dịch)</a>
+                                <span class="count">788</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num9">9</span>
+                                <a href="/truyen/ai-bao-han-tu-tien-full-dich/" class="name">[Dịch] Ai Bảo Hắn Tu Tiên</a>
+                                <span class="count">1302</span>
+                            </li>
+                        
+                    
+                    
+                    
+                        
+                            <li>
+                                <span class="num num10">10</span>
+                                <a href="/truyen/su-huynh-cua-ta-qua-manh-ban-dich/" class="name">Sư Huynh Của Ta Quá Mạnh (Bản dịch)</a>
+                                <span class="count">1665</span>
+                            </li>
+                        
+                    
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card card-home">
+                <h3 class="card-header">
+                    Truyện Dịch Miễn Phí
+                    <a href="/truyen-dich-yy/" class="card-more"><i class="iconfont icon-arrow-right icon-14"></i></a>
+                </h3>
+                <ul class="heading-list list-unstyled">
+                    
+                    
+                        
+                            <li class="no1">
+                                <span class="num num1">1</span>
+                                <div class="info">
+                                    <a href="/truyen/xuyen-sach-nu-tan-ngay-dai-hon-bi-nu-chinh-giet-chet-ban-dich/" class="name">Xuyên Sách Nữ Tần, Ngày Đại Hôn Bị Nữ Chính Giết Chết (Bản Dịch)</a>
+                                    <span class="count">49 Chương</span>
+                                    <div class="d-flex flex-column">
+                                        <a href="/tac-gia/co-son-phong-nguu-oa/" class="count mr-2 align-self-start" style="max-width: 100%;">Cô Sơn Phóng Ngưu Oa</a>
+                                        
+                                            <a href="/truyen-huyen-huyen/" class="count genre align-self-start">Huyền Huyễn</a>
+                                        
+                                    </div>
+                                </div>
+                                <a href="/truyen/xuyen-sach-nu-tan-ngay-dai-hon-bi-nu-chinh-giet-chet-ban-dich/" class="cover" aria-label="Xuyên Sách Nữ Tần, Ngày Đại Hôn Bị Nữ Chính Giết Chết (Bản Dịch)">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_xuyen-sach-nu-tan-ngay-dai-hon-bi-nu-chinh-giet-ch-ada5396bf8_60x90.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_xuyen-sach-nu-tan-ngay-dai-hon-bi-nu-chinh-giet-ch-ada5396bf8_120x180.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="60"
+                                            height="90"
+                                            class="lazy"
+                                        >
+                                    
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num2">2</span>
+                                <a href="/truyen/ta-co-the-cung-van-vat-cau-thong-dich/" class="name">Ta Có Thể Cùng Vạn Vật Câu Thông - Dịch</a>
+                                <span class="count">1</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num3">3</span>
+                                <a href="/truyen/cac-nguoi-tu-tien-ta-lam-ruong-ban-dich/" class="name">Các Ngươi Tu Tiên, Ta Làm Ruộng (bản dịch)</a>
+                                <span class="count">27</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num4">4</span>
+                                <a href="/truyen/de-quoc-dai-phan-tac-ban-dich/" class="name">Đế Quốc Đại Phản Tặc (Bản Dịch)</a>
+                                <span class="count">18</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num5">5</span>
+                                <a href="/truyen/tan-tru-tien/" class="name">Tru Tiên (Bản Chỉnh Sửa)</a>
+                                <span class="count">8</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num6">6</span>
+                                <a href="/truyen/dich-ta-mo-that-su-la-co-nhi-vien-khong-phai-sat-thu-duong/" class="name">[Dịch] Ta Mở Thật Sự Là Cô Nhi Viện, Không Phải Sát Thủ Đường</a>
+                                <span class="count">16</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num7">7</span>
+                                <a href="/truyen/sac-net-chien-co/" class="name">Sắc Nét Chiến Cơ</a>
+                                <span class="count">33</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num8">8</span>
+                                <a href="/truyen/thanh-son-ban-dich-hoi-thuyet-thoai-truu-tu/" class="name">Thanh Sơn (Bản dịch)</a>
+                                <span class="count">36</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num9">9</span>
+                                <a href="/truyen/chiec-long-xuong-thit-vi-ngu/" class="name">Chiếc Lồng Xương Thịt-Vĩ Ngư</a>
+                                <span class="count">41</span>
+                            </li>
+                        
+                    
+                        
+                            <li>
+                                <span class="num num10">10</span>
+                                <a href="/truyen/bat-dau-truong-sinh-van-co-ta-cau-den-thien-hoang-dia-lao-ban-dich/" class="name">Bắt Đầu Trường Sinh Vạn Cổ, Ta Cẩu Đến Thiên Hoang Địa Lão (Bản Dịch)</a>
+                                <span class="count">6</span>
+                            </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="col-3">
+        <div class="card card-home">
+            <h3 class="card-header">
+                Truyện Mới Trình Làng
+                <a href="/truyen-moi-dang/" class="card-more"><i class="iconfont icon-arrow-right icon-14"></i></a>
+            </h3>
+            <ul class="heading-list list-unstyled">
+                
+                
+                    
+                        <li class="no1">
+                            <span class="num num1">1</span>
+                            <div class="info">
+                                <a href="/truyen/huyen-lenh-de-su-trieu-khang/" class="name">Huyện Lệnh Đế Sư - Triệu Khang</a>
+                                <span class="count">546 Chương</span>
+                                <div class="d-flex flex-column">
+                                    <a href="/tac-gia/dao-thap-cuu/" class="count mr-2 align-self-start" style="max-width: 100%;">Đao Thập Cửu</a>
+                                    
+                                        <a href="/truyen-huyen-huyen/" class="count genre align-self-start">Huyền Huyễn</a>
+                                    
+                                </div>
+                            </div>
+                            <a href="/truyen/huyen-lenh-de-su-trieu-khang/" class="cover" aria-label="Huyện Lệnh Đế Sư - Triệu Khang">
+                                
+                                    <img
+                                        data-srcset="https://yymedia.codeprime.net/media/novels/202404/thumb_huyen-lenh-de-su-trieu-1a5a4e0767_60x90.jpg 1x,https://yymedia.codeprime.net/media/novels/202404/thumb_huyen-lenh-de-su-trieu-1a5a4e0767_120x180.jpg 2x"
+                                        data-sizes="auto"
+                                        alt=""
+                                        width="60"
+                                        height="90"
+                                        class="lazy"
+                                    >
+                                
+                            </a>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num2">2</span>
+                            <a href="/truyen/gia-toc-tu-tien-ta-tro-thanh-tran-toc-linh-thu/" class="name">Gia Tộc Tu Tiên: Ta Trở Thành Trấn Tộc Linh Thú</a>
+                            <span class="count">117</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num3">3</span>
+                            <a href="/truyen/ta-ngu-lien-co-the-truong-sinh-ban-dich/" class="name">Ta Ngủ Liền Có Thể Trường Sinh (Bản Dịch)</a>
+                            <span class="count">181</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num4">4</span>
+                            <a href="/truyen/hieu-hoa-dich-tu-tien-cuong-gia/" class="name">Hiệu hoa đích tu tiên cường giả</a>
+                            <span class="count">617</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num5">5</span>
+                            <a href="/truyen/ta-tu-tien-trong-the-gioi-thuc-tinh-gia/" class="name">Ta Tu Tiên trong thế giới Thức Tỉnh Giả</a>
+                            <span class="count">2</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num6">6</span>
+                            <a href="/truyen/toan-dan-chuyen-chuc-tu-linh-phap-su-ta-tuc-la-thien-tai-ban-dich/" class="name">Toàn Dân Chuyển Chức: Tử Linh Pháp Sư! Ta Tức Là Thiên Tai ( Bản Dịch )</a>
+                            <span class="count">201</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num7">7</span>
+                            <a href="/truyen/mat-the-da-tu-da-phuc-mo-dau-giao-hoa-tim-toi-cua/" class="name">Mạt thế: Đa Tử Đa Phúc, Mở Đầu Giáo Hoa Tìm Tới Cửa</a>
+                            <span class="count">198</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num8">8</span>
+                            <a href="/truyen/nguoi-lai-thong-quan-ban-dich/" class="name">Ngươi Lại Thông Quan ?! (Bản Dịch)</a>
+                            <span class="count">180</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num9">9</span>
+                            <a href="/truyen/thoi-gian-chi-chu-ban-dich/" class="name">Thời Gian Chi Chủ (Bản Dịch)</a>
+                            <span class="count">830</span>
+                        </li>
+                    
+                
+                    
+                        <li>
+                            <span class="num num10">10</span>
+                            <a href="/truyen/tinh-than-den-muon-nhu-co-rac-ta-bo-nha-di-nguoi-khoc-cai-gi-ban-dich/" class="name">Tình Thân Đến Muộn Như Cỏ Rác, Ta Bỏ Nhà Đi Ngươi Khóc Cái Gì ? ( Bản Dịch )</a>
+                            <span class="count">251</span>
+                        </li>
+                    
+                
+            </ul>
+        </div>
+    </div>
+    </div>
+</div>
+
+
+
+
+<div class="container full-banner mt-3">
+    
+
+    
+        
+        <div class="tkb" style="width: 1110px; height: 60px; ">
+            <a href="https://truyenyy.link/page/tai-khoan-premium/" target="_blank" rel="noopener"
+               
+                    title="Tài khoản TruyenYY Premium" aria-label="Tài khoản TruyenYY Premium"
+               >
+                
+                    <img class="lazy" data-src="https://i.imgur.com/V2YPMTE.jpg" alt="" style="width: 1110px; height: 60px;"/>
+                
+            </a>
+        </div>
+        
+    
+
+</div>
+
+
+
+<div class="container headline-ranking mt-3">
+    <div class="row">
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-11">
+    <h3 class="card-header">
+        Đô Thị
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/than-thoai-chi-hau/" class="name" target="_blank">Thần Thoại Chi Hậu</a>
+                <span class="count"><span class="num-format">1214</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/phan-phai-cuoi-nguoi-thuc-vat-nu-chinh-dien-cuong-dan-dan/" class="name" target="_blank">Phản Phái: Cưới Người Thực Vật Nữ Chính, Điên Cuồng Dán Dán</a>
+                <span class="count"><span class="num-format">13609</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/vu-em-kieu-the-la-dinh-luu-bat-dau-mang-em-be-toi-cua/" class="name" target="_blank">Vú Em: Kiều Thê Là Đỉnh Lưu, Bắt Đầu Mang Em Bé Tới Cửa</a>
+                <span class="count"><span class="num-format">7919</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/bi-nu-de-ban-chet-xuyen-ve-hien-dai-cho-co-nhan-truc-tiep/" class="name" target="_blank">Bị Nữ Đế Ban Chết, Xuyên Về Hiện Đại Cho Cổ Nhân Trực Tiếp</a>
+                <span class="count"><span class="num-format">5130</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/thanh-son-ban-dich-hoi-thuyet-thoai-truu-tu/" class="name" target="_blank">Thanh Sơn (Bản dịch)</a>
+                <span class="count"><span class="num-format">90</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-13">
+    <h3 class="card-header">
+        Huyền Huyễn
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/bat-dau-danh-dau-hoang-co-thanh-the/" class="name" target="_blank">Bắt Đầu Đánh Dấu Hoang Cổ Thánh Thể</a>
+                <span class="count"><span class="num-format">2434514</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/an-cu-10000-nam-bat-dau-hau-dai-tim-toi-cua/" class="name" target="_blank">Ẩn Cư 10000 Năm, Bắt Đầu Hậu Đại Tìm Tới Cửa</a>
+                <span class="count"><span class="num-format">91590</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/khai-truong-nguoi-tai-trong-cua-hang-lao-ban-co-uc-diem-cuong/" class="name" target="_blank">Khai Trương, Người Tại Trong Cửa Hàng, Lão Bản Có Ức Điểm Cường</a>
+                <span class="count"><span class="num-format">284557</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/ta-chi-muon-huy-diet-tong-mon-the-nao-nghich-thien-thanh-than/" class="name" target="_blank">Ta Chỉ Muốn Hủy Diệt Tông Môn, Thế Nào Nghịch Thiên Thành Thần</a>
+                <span class="count"><span class="num-format">7246</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/huyen-huyen-bat-dau-mot-than-vo-dich-dai-chieu/" class="name" target="_blank">Huyễn Huyền: Bắt Đầu Một Thân Vô Địch Đại Chiêu</a>
+                <span class="count"><span class="num-format">4141</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/ngon-xuat-phap-tuy-ta-bi-nhan-thanh-thien-dao-chi-tu/" class="name" target="_blank">Ngôn Xuất Pháp Tùy: Ta Bị Nhận Thành Thiên Đạo Chi Tử</a>
+                <span class="count"><span class="num-format">57982</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/ngu-thu-chu-thien/" class="name" target="_blank">Ngự Thú Chư Thiên</a>
+                <span class="count"><span class="num-format">36776</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/thang-te-roi-de-tu-cua-ta-deu-co-he-thong/" class="name" target="_blank">Thắng Tê Rồi, Đệ Tử Của Ta Đều Có Hệ Thống</a>
+                <span class="count"><span class="num-format">15108</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/than-kiem-vo-dich/" class="name" target="_blank">Thần Kiếm Vô Địch</a>
+                <span class="count"><span class="num-format">11818</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/bat-dau-danh-dau-bang-de-cung-ta-vo-dich/" class="name" target="_blank">Bắt Đầu Đánh Dấu Băng Đế Cung, Ta Vô Địch!</a>
+                <span class="count"><span class="num-format">10707</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-24">
+    <h3 class="card-header">
+        Trọng Sinh
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/de-ba/" class="name" target="_blank">Đế Bá (dịch edit)</a>
+                <span class="count"><span class="num-format">2082</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/van-co-than-de/" class="name" target="_blank">Vạn Cổ Thần Đế</a>
+                <span class="count"><span class="num-format">1610</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/than-dao-dan-ton-copy-tu-truyen-full/" class="name" target="_blank">Thần Đạo Đan Tôn</a>
+                <span class="count"><span class="num-format">1464</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/tuyet-dinh-dan-ton-dich/" class="name" target="_blank">Tuyệt Đỉnh Đan Tôn (Dịch-Full)</a>
+                <span class="count"><span class="num-format">1128</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/tuyet-dinh-dan-ton/" class="name" target="_blank">Tuyệt Đỉnh Đan Tôn</a>
+                <span class="count"><span class="num-format">850</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/rich-player-vong-du-than-cap-cuong-hao-ban-dich-free/" class="name" target="_blank">Rich Player - Võng Du Thần Cấp Cường Hào (Dịch-Full)</a>
+                <span class="count"><span class="num-format">825</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/nghich-thien-ta-than/" class="name" target="_blank">Nghịch Thiên Tà Thần</a>
+                <span class="count"><span class="num-format">468</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/cuc-pham-yeu-nghiet-ban-dich/" class="name" target="_blank">Siêu Thần Yêu Nghiệt (Dịch - Hoàn)</a>
+                <span class="count"><span class="num-format">275</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/su-huynh-ta-thuc-qua-can-trong/" class="name" target="_blank">Sư Huynh Thực Quá Cẩn Trọng (Bản Dịch)</a>
+                <span class="count"><span class="num-format">235</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/vo-than-chua-te/" class="name" target="_blank">Võ Thần Chúa Tể</a>
+                <span class="count"><span class="num-format">223</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-5">
+    <h3 class="card-header">
+        Võng Du
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/rich-player-vong-du-than-cap-cuong-hao-ban-dich-free/" class="name" target="_blank">Rich Player - Võng Du Thần Cấp Cường Hào (Dịch-Full)</a>
+                <span class="count"><span class="num-format">825</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/van-minh-chi-van-gioi-linh-chu/" class="name" target="_blank">Văn Minh Chi Vạn Giới Lĩnh Chủ</a>
+                <span class="count"><span class="num-format">746</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/ta-co-mot-than-bi-dong-ky/" class="name" target="_blank">Ta Có Một Thân Bị Động Kỹ</a>
+                <span class="count"><span class="num-format">604</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/toan-dan-chuyen-chuc-tu-linh-phap-su-ta-tuc-la-thien-tai/" class="name" target="_blank">Toàn Dân Chuyển Chức: Tử Linh Pháp Sư! Ta Tức Là Thiên Tai</a>
+                <span class="count"><span class="num-format">405</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/khi-bac-si-mo-hack-dich-2/" class="name" target="_blank">Khi Bác Sĩ Mở Hack (Dịch)</a>
+                <span class="count"><span class="num-format">404</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/dao-mo-but-ky/" class="name" target="_blank">Đạo Mộ Bút Ký</a>
+                <span class="count"><span class="num-format">292</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/de-quoc-chi-tam/" class="name" target="_blank">Đế Quốc Chi Tâm</a>
+                <span class="count"><span class="num-format">292</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/dia-ha-thanh-ngoan-gia/" class="name" target="_blank">Địa Hạ Thành Ngoạn Gia</a>
+                <span class="count"><span class="num-format">291</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/ban-tang-cha-ngan-ai-bao-gio-dich/" class="name" target="_blank">Bần Tăng Chả Ngán Ai Bao Giờ (Dịch)</a>
+                <span class="count"><span class="num-format">276</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/toan-chuc-cao-thu/" class="name" target="_blank">Toàn Chức Cao Thủ</a>
+                <span class="count"><span class="num-format">271</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-6">
+    <h3 class="card-header">
+        Ngôn Tình
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/thien-y-phuong-cuu/" class="name" target="_blank">Thiên Y Phượng Cửu</a>
+                <span class="count"><span class="num-format">298</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/xuyen-qua-thap-nien-60-chi-tan-the-nu-vuong/" class="name" target="_blank">Xuyên Qua Thập Niên 60 Chi Tận Thế Nữ Vương</a>
+                <span class="count"><span class="num-format">293</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/sieu-cap-y-dao-cao-thu/" class="name" target="_blank">Siêu Cấp Y Đạo Cao Thủ</a>
+                <span class="count"><span class="num-format">181</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/mau-xuyen-phao-hoi-nu-xung-nghich-tap-ky/" class="name" target="_blank">Mau Xuyên: Pháo Hôi Nữ Xứng Nghịch Tập Ký</a>
+                <span class="count"><span class="num-format">175</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/pokemon-chi-hami-lu-hanh/" class="name" target="_blank">Pokemon Kaitou Izumi</a>
+                <span class="count"><span class="num-format">121</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/xuyen-nhanh-nu-phoi-binh-tinh-mot-chut/" class="name" target="_blank">Xuyên Nhanh: Nữ Phối, Bình Tĩnh Một Chút</a>
+                <span class="count"><span class="num-format">109</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/cua-do-thuong-than-bang-lanh-2/" class="name" target="_blank">Cưa Đổ Thượng Thần Băng Lãnh (Dịch)</a>
+                <span class="count"><span class="num-format">92</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/80-ga-ac-ba/" class="name" target="_blank">80 Gả Ác Bá</a>
+                <span class="count"><span class="num-format">85</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/su-phu-lai-mat-tich-roi/" class="name" target="_blank">Sư Phụ Lại Mất Tích Rồi</a>
+                <span class="count"><span class="num-format">84</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/trong-sinh-truy-my-ky/" class="name" target="_blank">Trọng Sinh Truy Mỹ Ký</a>
+                <span class="count"><span class="num-format">80</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-21">
+    <h3 class="card-header">
+        Đam Mỹ
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/vo-song/" class="name" target="_blank">Vô Song</a>
+                <span class="count"><span class="num-format">288</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/xuyen-viet-chi-tien-sinh/" class="name" target="_blank">Xuyên Việt Chi Tiên Sinh</a>
+                <span class="count"><span class="num-format">4</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/gia-toc-loan-luan-su/" class="name" target="_blank">Gia Tộc Loạn Luân Sử</a>
+                <span class="count"><span class="num-format">2</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/quy-hoan-quy-ai/" class="name" target="_blank">Quỷ Hoan Quỷ Ái</a>
+                <span class="count"><span class="num-format">2</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/van-tran/" class="name" target="_blank">Vấn Trần</a>
+                <span class="count"><span class="num-format">1</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/tieu-thu-cuoi-vo/" class="name" target="_blank">Tiểu Thư Cưới Vợ</a>
+                <span class="count"><span class="num-format">1</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/tien-sinh-doan-menh-sao/" class="name" target="_blank">Tiên Sinh Đoán Mệnh Sao?</a>
+                <span class="count"><span class="num-format">1</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/vong-du-chi-dam-dang-nhan-sinh/" class="name" target="_blank">Võng Du Chi Dâm Đãng Nhân Sinh</a>
+                <span class="count"><span class="num-format">1</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/di-thue-nha-tro-gap-phai-mot-yeu-tinh-khiem-thao-nhat-to-phong-dich-khiem-thao-yeu-tinh/" class="name" target="_blank">Đi Thuê Nhà Trọ Gặp Phải Một Yêu Tinh Khiếm Thao (Nhật Tô Phòng Đích Khiếm Thao Yêu Tinh)</a>
+                <span class="count"><span class="num-format">1</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/tra-cong-trung-sinh-chi-mat-the-truyen-ky/" class="name" target="_blank">Tra Công Trùng Sinh Chi Mạt Thể Truyền Kỳ</a>
+                <span class="count"><span class="num-format">1</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-12">
+    <h3 class="card-header">
+        Dị Năng
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/quy-dau-quy-ban-dich/" class="name" target="_blank">Khủng Bố Sống Lại (Bản Dịch)</a>
+                <span class="count"><span class="num-format">370</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/xuyen-qua-thap-nien-60-chi-tan-the-nu-vuong/" class="name" target="_blank">Xuyên Qua Thập Niên 60 Chi Tận Thế Nữ Vương</a>
+                <span class="count"><span class="num-format">293</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/nhan-danh-bong-dem-ban-dich/" class="name" target="_blank">Nhân Danh Bóng Đêm - Đệ Nhất Danh Sách 2 (Bản dịch)</a>
+                <span class="count"><span class="num-format">273</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/dai-chua-te/" class="name" target="_blank">Đại Chúa Tể</a>
+                <span class="count"><span class="num-format">216</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/kiem-dong-cuu-thien/" class="name" target="_blank">Kiếm Động Cửu Thiên</a>
+                <span class="count"><span class="num-format">202</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/ma-lam-thien-ha-ban-dich/" class="name" target="_blank">Ma Lâm Thiên Hạ (Bản Dịch)</a>
+                <span class="count"><span class="num-format">195</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/dinh-cap-luu-manh/" class="name" target="_blank">Đỉnh Cấp Lưu Manh</a>
+                <span class="count"><span class="num-format">182</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/trong-sinh-lam-dao-tac-dich/" class="name" target="_blank">Trọng Sinh Làm Đạo Tặc (Hoàn thành)</a>
+                <span class="count"><span class="num-format">179</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/so-hieu-09-ban-dich/" class="name" target="_blank">Số Hiệu 09 (Bản dịch)</a>
+                <span class="count"><span class="num-format">176</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/trung-khai-mat-the-dich/" class="name" target="_blank">Thế Giới Sụp Đổ (Dịch FULL)</a>
+                <span class="count"><span class="num-format">165</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+        <div class="col-3 mb-3">
+            
+<div class="card card-home" id="topGenreHeadline-30">
+    <h3 class="card-header">
+        Đồng Nhân
+    </h3>
+    <ul class="heading-list list-unstyled">
+        
+            
+            <li>
+                <span class="num num1">1</span>
+                <a href="/truyen/huyen-thi-dinh-phong/" class="name" target="_blank">Huyễn Thị Đỉnh Phong</a>
+                <span class="count"><span class="num-format">293</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num2">2</span>
+                <a href="/truyen/one-piece-xin-goi-ta-giao-phu/" class="name" target="_blank">One Piece: Xin Gọi Ta Giáo Phụ</a>
+                <span class="count"><span class="num-format">222</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num3">3</span>
+                <a href="/truyen/ta-dai-dao-than-phan-bi-muoi-muoi-dac-ky-cong-khai/" class="name" target="_blank">Ta Đại Đạo Thân Phận Bị Muội Muội Đắc Kỷ Công Khai</a>
+                <span class="count"><span class="num-format">213</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num4">4</span>
+                <a href="/truyen/tong-vo-dong-phuc-xem-boi-bat-dau-vi-hung-ba-doan-menh/" class="name" target="_blank">Tổng Võ: Đồng Phúc Xem Bói, Bắt Đầu Vì Hùng Bá Đoán Mệnh</a>
+                <span class="count"><span class="num-format">196</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num5">5</span>
+                <a href="/truyen/dragon-ball-manh-nhat-nguoi-saiyan-rigor/" class="name" target="_blank">Dragon Ball Mạnh Nhất Người Saiyan Rigor</a>
+                <span class="count"><span class="num-format">180</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num6">6</span>
+                <a href="/truyen/tu-tu-chu-thien/" class="name" target="_blank">Từ Từ Chư Thiên</a>
+                <span class="count"><span class="num-format">161</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num7">7</span>
+                <a href="/truyen/xuyen-qua-tu-dau-pha-bat-dau/" class="name" target="_blank">Xuyên Qua Từ Đấu Phá Bắt Đầu</a>
+                <span class="count"><span class="num-format">156</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num8">8</span>
+                <a href="/truyen/he-thong-hau-cung-nhi-thu-nguyen-cua-ta/" class="name" target="_blank">Hệ Thống Hậu Cung Nhị Thứ Nguyên Của Ta</a>
+                <span class="count"><span class="num-format">155</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num9">9</span>
+                <a href="/truyen/dau-pha-thu-do-van-lan-tra-ve-dan-de-co-ha/" class="name" target="_blank">Đấu Phá: Thụ Đồ Vạn Lần Trả Về, Đan Đế Cổ Hà</a>
+                <span class="count"><span class="num-format">138</span></span>
+            </li>
+            
+        
+            
+            <li>
+                <span class="num num10">10</span>
+                <a href="/truyen/pokemon-chi-hami-lu-hanh/" class="name" target="_blank">Pokemon Kaitou Izumi</a>
+                <span class="count"><span class="num-format">121</span></span>
+            </li>
+            
+        
+    </ul>
+</div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="container full-banner my-3">
+    
+
+    
+        
+        <div class="tkb" style="width: 1110px; height: auto; ">
+            <a href="https://truyenyy.link/page/huong-dan-dang-truyen/" target="_blank" rel="noopener"
+               
+                    aria-label="desktop-mid2-home-banner"
+               >
+                
+                    <img class="lazy" data-src="https://yymedia.codeprime.net/media/bnr/7374e44ea0.jpg" alt="" style="width: 1110px; height: auto;"/>
+                
+            </a>
+        </div>
+        
+    
+
+</div>
+
+
+
+<div class="container home-grid">
+    <div class="row">
+        <div class="col-9">
+            <div class="card card-home">
+                <h3 class="card-header">
+                    Top Đề Cử Gần Đây
+                </h3>
+                <div class="row">
+                    
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/ta-co-the-viet-thu-cho-qua-khu-dich/" class="cover" target="_blank" aria-label="Ta Có Thể Viết Thư Cho Quá Khứ (Dịch)">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202308/thumb_ta-co-the-viet-thu-cho-qua-khu-dich-d6b97c52bd_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202308/thumb_ta-co-the-viet-thu-cho-qua-khu-dich-d6b97c52bd_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202308/ta-co-the-viet-thu-cho-qua-khu-dich-d6b97c52bd.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/ta-co-the-viet-thu-cho-qua-khu-dich/de-cu/#id-39325" target="_blank">Ta Có Thể Viết Thư Cho Quá Khứ (Dịch)</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/bach-ha/" class="author" target="_blank">Bạch Hà</a>
+                                        
+                                        
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/65698173/" target="_blank" class="username"><b>lamvoia2</b></a></span>
+                                    <blockquote class="desc">Ban đầu cứ tưởng truyện đô thị lợi dụng quá khứ làm giàu cơ, hoá ra lại là một tràng tranh đấu trí …</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/truong-sinh-bat-dau-tu-tap-dich-nuoi-ga-dich/" class="cover" target="_blank" aria-label="Trường Sinh Bắt Đầu Từ Tạp Dịch Nuôi Gà (Dịch)">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_truong-sinh-bat-dau-tu-tap-dich-nuoi-ga-dich-023ed2daef_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_truong-sinh-bat-dau-tu-tap-dich-nuoi-ga-dich-023ed2daef_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202405/truong-sinh-bat-dau-tu-tap-dich-nuoi-ga-dich-023ed2daef.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/truong-sinh-bat-dau-tu-tap-dich-nuoi-ga-dich/de-cu/#id-39322" target="_blank">Trường Sinh Bắt Đầu Từ Tạp Dịch Nuôi Gà (Dịch)</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/dau-ca-dong-hai/" class="author" target="_blank">Đầu cá Đông Hải</a>
+                                        
+                                        
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/15263574/" target="_blank" class="username"><b>hungnguyen21301593</b></a></span>
+                                    <blockquote class="desc">Gửi các bạn mã KM 20% mỗi đầu tháng: #37908742 ✔ Thời hạn sử dụng từ: 08:04, Thứ 7 01/06/2024 ✔ Thờ…</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/linh-vu-thien-ha/" class="cover" target="_blank" aria-label="Linh Vũ Thiên Hạ">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/thumb_d604cad845_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/thumb_d604cad845_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/d604cad845.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/linh-vu-thien-ha/de-cu/#id-39316" target="_blank">Linh Vũ Thiên Hạ</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/vu-phong-2/" class="author" target="_blank">Vũ Phong</a>
+                                        
+                                        
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/57056282/" target="_blank" class="username"><b>huy071099</b></a></span>
+                                    <blockquote class="desc">Truyện hay, có thế lực môn phái cho mình . Mọi người ai biết truyện giống này hk thu phục yêu thú r…</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/cau-lac-bo-thien-tai-ban-dich/" class="cover" target="_blank" aria-label="Câu Lạc Bộ Thiên Tài ( Bản Dịch )">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_cau-lac-bo-thien-tai-ban-dich-a9ff4d9a79_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_cau-lac-bo-thien-tai-ban-dich-a9ff4d9a79_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202405/cau-lac-bo-thien-tai-ban-dich-a9ff4d9a79.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/cau-lac-bo-thien-tai-ban-dich/de-cu/#id-39309" target="_blank">Câu Lạc Bộ Thiên Tài ( Bản Dịch )</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/thanh-thanh-du-thien/" class="author" target="_blank">Thành Thành Dữ Thiền</a>
+                                        
+                                        
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/90927993/" target="_blank" class="username"><b>timeless</b></a></span>
+                                    <blockquote class="desc">Quyển 1 đọc thử chill chill thấy nội dung sáng tạo thú vị, thế giới trong mơ toàn tấu hài. Sang quy…</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/an-duoc-cai-tinh-than-dai-hai/" class="cover" target="_blank" aria-label="Ăn được cái tinh thần đại hải.">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202405/an-duoc-cai-tinh-than-dai-hai-a1bb78e17a.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/an-duoc-cai-tinh-than-dai-hai/de-cu/#id-39308" target="_blank">Ăn được cái tinh thần đại hải.</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/van-vu/" class="author" target="_blank">Văn Vũ</a>
+                                        
+                                        <i class="iconfont icon-full icon-24 text-info ml-1"></i>
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/15555636/" target="_blank" class="username"><b>i5121314</b></a></span>
+                                    <blockquote class="desc">Truyện kể về Lâm Khinh Ca nhờ &#x27;&#x27; ăn được cái tinh thần đại hải&#x27;&#x27; mà có thể tăng cao thực lực thông …</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/an-duoc-cai-tinh-than-dai-hai/" class="cover" target="_blank" aria-label="Ăn được cái tinh thần đại hải.">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202405/an-duoc-cai-tinh-than-dai-hai-a1bb78e17a.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/an-duoc-cai-tinh-than-dai-hai/de-cu/#id-39307" target="_blank">Ăn được cái tinh thần đại hải.</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/van-vu/" class="author" target="_blank">Văn Vũ</a>
+                                        
+                                        <i class="iconfont icon-full icon-24 text-info ml-1"></i>
+                                    </div>
+                                    <span class="stat"><span class="text-success">80/100</span>
+                                        <a href="/user/13855019/" target="_blank" class="username"><b>ShadowLord-K24Rebirth</b></a></span>
+                                    <blockquote class="desc">&quot;Ăn được cái tinh thần đại hải&quot; là một tuyệt phẩm văn học hiện đại, kể về Lâm Khinh Ca, người tình …</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/an-duoc-cai-tinh-than-dai-hai/" class="cover" target="_blank" aria-label="Ăn được cái tinh thần đại hải.">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202405/an-duoc-cai-tinh-than-dai-hai-a1bb78e17a.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/an-duoc-cai-tinh-than-dai-hai/de-cu/#id-39306" target="_blank">Ăn được cái tinh thần đại hải.</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/van-vu/" class="author" target="_blank">Văn Vũ</a>
+                                        
+                                        <i class="iconfont icon-full icon-24 text-info ml-1"></i>
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/10333696/" target="_blank" class="username"><b>G.O.A.T.YYer</b></a></span>
+                                    <blockquote class="desc">Trong &quot;Ăn được cái tinh thần đại hải,&quot; Lâm Khinh Ca tình cờ ăn phải mảnh tinh thần đại hải, từ đó c…</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                        
+                        <div class="col-6">
+                            <div class="novel-item">
+                                <a href="/truyen/an-duoc-cai-tinh-than-dai-hai/" class="cover" target="_blank" aria-label="Ăn được cái tinh thần đại hải.">
+                                    
+                                        <img
+                                            data-srcset="https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_80x120.jpg 1x,https://yymedia.codeprime.net/media/novels/202405/thumb_an-duoc-cai-tinh-than-dai-hai-a1bb78e17a_120x180.jpg 1.5x, https://yymedia.codeprime.net/media/novels/202405/an-duoc-cai-tinh-than-dai-hai-a1bb78e17a.jpg 2x"
+                                            data-sizes="auto"
+                                            alt=""
+                                            width="80"
+                                            height="120"
+                                            class="lazy zoom-me"
+                                        >
+                                    
+                                </a>
+                                <div class="info">
+                                    <h4><a href="/truyen/an-duoc-cai-tinh-than-dai-hai/de-cu/#id-39305" target="_blank">Ăn được cái tinh thần đại hải.</a></h4>
+                                    <div>
+                                        <a href="/tac-gia/van-vu/" class="author" target="_blank">Văn Vũ</a>
+                                        
+                                        <i class="iconfont icon-full icon-24 text-info ml-1"></i>
+                                    </div>
+                                    <span class="stat"><span class="text-success">100/100</span>
+                                        <a href="/user/17329021/" target="_blank" class="username"><b>F-Darkness</b></a></span>
+                                    <blockquote class="desc">Lâm Khinh Ca trong &quot;Ăn được cái tinh thần đại hải&quot; tình cờ ăn phải mảnh tinh thần đại hải, từ đó có…</blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    
+                </div>
+            </div>
+        </div>
+        <div class="col-3">
+            <div class="card card-home card-bg-dark">
+                <h3 class="card-header">
+                    Đề Cử Mới Đăng
+                    <a href="/truyen-moi-de-cu/" title="Danh Sách Đầy Đủ" target="_blank" class="card-more"><i class="iconfont icon-arrow-right icon-14"></i></a>
+                </h3>
+                <ul class="list-unstyled heading-list">
+                    
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/quy-di-tu-tien-the-gioi-dich/de-cu/#id-39334" class="name" target="_blank">Quỷ Dị Tu Tiên Thế Giới (Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/57580248/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> Lebanh
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/thap-nien-70-dai-vuong-an-uong-ban-dich/de-cu/#id-39333" class="name" target="_blank">Thập Niên 70: Đại Vương Ăn Uống (Bản Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/46942363/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> yy96629631
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/ta-phai-len-lop-lai-cho-the-gioi-nay-dich/de-cu/#id-39332" class="name" target="_blank">Ta Phải Lên Lớp Lại Cho Thế Giới Này (Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/73021047/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> Inhkq
+                                    <span class="badge badge-primary">60/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/quy-di-tu-tien-the-gioi-dich/de-cu/#id-39331" class="name" target="_blank">Quỷ Dị Tu Tiên Thế Giới (Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/53310073/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> NhânK
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/sieu-cap-thien-phu-ban-dich/de-cu/#id-39329" class="name" target="_blank">Siêu Cấp Thiên Phú (Bản Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/18631974/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> cr7aveiro
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/quy-di-kho-giet-that-co-loi-ta-moi-that-su-la-bat-tu-dich/de-cu/#id-39328" class="name" target="_blank">Quỷ Dị Khó Giết? Thật Có Lỗi, Ta Mới Thật Sự Là Bất Tử ( Dịch )</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/25248358/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> yy14887426
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/kiem-lai-phong-hoa-hi-chu-hau-ban-dich/de-cu/#id-39327" class="name" target="_blank">Kiếm Lai (Bản Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/99079444/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> yy95712619
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/trung-sinh-chi-kieu-hung-quat-khoi-dich/de-cu/#id-39326" class="name" target="_blank">Trùng Sinh Chi Kiêu Hùng Quật Khởi (Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/15875639/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> yy12629729
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/ta-co-the-viet-thu-cho-qua-khu-dich/de-cu/#id-39325" class="name" target="_blank">Ta Có Thể Viết Thư Cho Quá Khứ (Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/65698173/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> lamvoia2
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/tinh-than-den-muon-nhu-co-rac-ta-bo-nha-di-nguoi-khoc-cai-gi-ban-dich/de-cu/#id-39324" class="name" target="_blank">Tình Thân Đến Muộn Như Cỏ Rác, Ta Bỏ Nhà Đi Ngươi Khóc Cái Gì ? ( Bản Dịch )</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/40407798/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> ngoctien132
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                        
+                        <li>
+                            <div class="d-flex">
+                                <a href="/truyen/truong-sinh-bat-dau-tu-tap-dich-nuoi-ga-dich/de-cu/#id-39322" class="name" target="_blank">Trường Sinh Bắt Đầu Từ Tạp Dịch Nuôi Gà (Dịch)</a>
+                            </div>
+                            <div class="d-flex mt-1">
+                                <a href="/user/15263574/" class="genre">
+                                    <i class="iconfont icon-user icon-14"></i> hungnguyen21301593
+                                    <span class="badge badge-primary">100/100</span>
+                                </a>
+                            </div>
+                        </li>
+                        
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container home-grid last-update mt-3">
+    <div class="row">
+        <div class="col-12">
+            <div id="react-root_desktop-home-updates">
+                
+                    <div class="card card-home">
+                        <h3 class="card-header">
+                            Truyện Mới Cập Nhật
+                            <a href="/truyen-moi-cap-nhat/" class="card-more" target="_blank"><i class="iconfont icon-arrow-right icon-14"></i></a>
+                        </h3>
+                        <table class="table table-sm table-striped">
+                            <tbody>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/sau-tan-the-ta-khong-ngung-tien-hoa/">Sau Tận Thế, Ta Không Ngừng Tiến Hóa</a></td>
+                                
+                                <td><a href="/truyen/sau-tan-the-ta-khong-ngung-tien-hoa/chuong-1538.html">Chương 1538: Áo Giáp</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/loi-ran-cua-dat-troi/">Lời Răn Của Đất Trời </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T15:05:04.350540+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/ta-co-999-loai-di-nang/">Ta Có 999 Loại Dị Năng</a></td>
+                                
+                                <td><a href="/truyen/ta-co-999-loai-di-nang/chuong-623.html">Chương 623: Dị Thú Cấp Ba</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/vu-dich/">Vụ địch </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T15:05:04.058075+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/huyen-lenh-de-su-trieu-khang/">Huyện Lệnh Đế Sư - Triệu Khang</a></td>
+                                
+                                <td><a href="/truyen/huyen-lenh-de-su-trieu-khang/chuong-546.html">Chương 546: Nghệ thuật là bùng nổ</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/dao-thap-cuu/">Đao Thập Cửu </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T15:04:53.132229+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/gia-toc-tu-tien-ta-tro-thanh-tran-toc-linh-thu/">Gia Tộc Tu Tiên: Ta Trở Thành Trấn Tộc Linh Thú</a></td>
+                                
+                                <td><a href="/truyen/gia-toc-tu-tien-ta-tro-thanh-tran-toc-linh-thu/chuong-117.html">Chương 117: Tin Dữ, Trường Xuân Tán Nhân 3</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/trieu-bac-hai/">Triều Bắc Hải </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T15:03:04.353852+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/ta-ngu-lien-co-the-truong-sinh-ban-dich/">Ta Ngủ Liền Có Thể Trường Sinh (Bản Dịch)</a></td>
+                                
+                                <td><a href="/truyen/ta-ngu-lien-co-the-truong-sinh-ban-dich/chuong-181.html">Chương 181: Thánh Giáp Trùng</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/nhat-chich-luu-lien-3-hao/">Nhất Chích Lưu Liên 3 Hào </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T15:00:06.009604+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/hieu-hoa-dich-tu-tien-cuong-gia/">Hiệu hoa đích tu tiên cường giả</a></td>
+                                
+                                <td><a href="/truyen/hieu-hoa-dich-tu-tien-cuong-gia/chuong-618.html">Chương 618: </a></td>
+                                
+                                
+                                <td><a href="/tac-gia/lac-diep-phu-tran/">Lạc diệp phù trần </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T15:00:05.691826+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/mat-the-sinh-hoa-nguy-co/">Mạt Thế - Sinh Hoá Nguy Cơ</a></td>
+                                
+                                <td><a href="/truyen/mat-the-sinh-hoa-nguy-co/chuong-209.html">Chương 209: Lần đầu chặn được.</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/han-nhuoc-tuyet/">Hàn Nhược Tuyết <i class="iconfont icon-original icon-24 text-success ml-1"></i></a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:58:40.085068+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/ta-tu-tien-trong-the-gioi-thuc-tinh-gia/">Ta Tu Tiên trong thế giới Thức Tỉnh Giả</a></td>
+                                
+                                <td><a href="/truyen/ta-tu-tien-trong-the-gioi-thuc-tinh-gia/chuong-2.html">Chương 2: Gặp gỡ Tiểu cô nương núi bự</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/td-2/">TD <i class="iconfont icon-original icon-24 text-success ml-1"></i></a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:55:15.293712+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/cuc-pham-phong-luu-gia-thai-giam/">Cực Phẩm Phong Lưu Giả Thái Giám</a></td>
+                                
+                                <td><a href="/truyen/cuc-pham-phong-luu-gia-thai-giam/chuong-581.html">Chương 581: Nghĩ kế trộm vợ!</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/hoa-vuong-chi-vuong/">Hỏa Vương Chi Vương </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:48:15.869547+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/truong-sinh-quy-tien-ban-dich/">Trường Sinh Quỷ Tiên (Bản Dịch)</a></td>
+                                
+                                <td><a href="/truyen/truong-sinh-quy-tien-ban-dich/chuong-112.html">Chương 112: Thi Sơn làm ruộng hai ba sự tình</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/thuc-chuc-trung-chi-de/">Thực Chúc Trung Chi Đệ </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:46:09.244552+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/dai-luat-su-ngoai-vong-phap-luat-dich/">Đại Luật Sư Ngoài Vòng Pháp Luật (Dịch)</a></td>
+                                
+                                <td><a href="/truyen/dai-luat-su-ngoai-vong-phap-luat-dich/chuong-332.html">Chương 332: Kết quả của bản án! 1</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/dai-phong-vu/">Đại Phong Vụ </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:46:04.657601+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/nguoi-choi-so-4-ban-dich/">Người Chơi Số 4 (Bản Dịch)</a></td>
+                                
+                                <td><a href="/truyen/nguoi-choi-so-4-ban-dich/chuong-513.html">Chương 513: Dãy núi Tuyệt Tẫn và bãi rác 2</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/hac-tam-dai-bach/">Hắc Tâm Đại Bạch </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:46:04.431522+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/toan-dan-chuyen-chuc-tu-linh-phap-su-ta-tuc-la-thien-tai-ban-dich/">Toàn Dân Chuyển Chức: Tử Linh Pháp Sư! Ta Tức Là Thiên Tai ( Bản Dịch )</a></td>
+                                
+                                <td><a href="/truyen/toan-dan-chuyen-chuc-tu-linh-phap-su-ta-tuc-la-thien-tai-ban-dich/chuong-201.html">Chương 201: Tính năng và giá cả của Ma Vật Vực Thẳm cao thật đấy (1)</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/man-do-dich-tru/">Mạn Đồ Đích Trư </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:45:05.069812+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/quy-di-kho-giet-that-co-loi-ta-moi-that-su-la-bat-tu-dich/">Quỷ Dị Khó Giết? Thật Có Lỗi, Ta Mới Thật Sự Là Bất Tử ( Dịch )</a></td>
+                                
+                                <td><a href="/truyen/quy-di-kho-giet-that-co-loi-ta-moi-that-su-la-bat-tu-dich/chuong-698.html">Chương 698: Tiểu tử! Xem cho kỹ, kiếm này...</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/luc-ca-ho-lo/">Lục Cá Hồ Lô </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:45:04.513573+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/mat-the-da-tu-da-phuc-mo-dau-giao-hoa-tim-toi-cua/">Mạt thế: Đa Tử Đa Phúc, Mở Đầu Giáo Hoa Tìm Tới Cửa</a></td>
+                                
+                                <td><a href="/truyen/mat-the-da-tu-da-phuc-mo-dau-giao-hoa-tim-toi-cua/chuong-198.html">Chương 198: Bảo Bối Của Lâm Tuyết Nhu.</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/o-ho-ho-khoi-phi/">Ô Hô Hô Khởi Phi </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:42:16.157051+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/cay-tai-tan-the-them-diem-thang-cap-ban-dich/">Cày Tại Tận Thế Thêm Điểm Thăng Cấp (Bản Dịch)</a></td>
+                                
+                                <td><a href="/truyen/cay-tai-tan-the-them-diem-thang-cap-ban-dich/chuong-490.html">Chương 490: Chỉ cần một mình ta đi là được. (3)</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/tan-phong/">Tân Phong </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:41:09.321716+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/nguoi-lai-thong-quan-ban-dich/">Ngươi Lại Thông Quan ?! (Bản Dịch)</a></td>
+                                
+                                <td><a href="/truyen/nguoi-lai-thong-quan-ban-dich/chuong-180.html">Chương 180: Thật sự có câu hỏi</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/40-canh-cao/">40 Cảnh Cáo </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:37:04.081810+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/thoi-gian-chi-chu-ban-dich/">Thời Gian Chi Chủ (Bản Dịch)</a></td>
+                                
+                                <td><a href="/truyen/thoi-gian-chi-chu-ban-dich/chuong-830.html">Chương 830: Đúng Rồi</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/ngu-nhi-tieu-tieu/">Ngư nhi tiểu tiểu </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:36:04.877184+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/tu-luyen-gian-luoc-hoa-cong-phap-bat-dau-dich/">Long Tượng Kiếm Chủ (Dịch)</a></td>
+                                
+                                <td><a href="/truyen/tu-luyen-gian-luoc-hoa-cong-phap-bat-dau-dich/chuong-1419.html">Chương 1419: Nghịch Thiên Cải Mệnh</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/no-luc-cat-ngu/">Nỗ Lực Cật Ngư </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:35:46.614225+07:00"></time></td>
+                            </tr>
+                            
+                            <tr>
+                                
+                                <td class="genre"><a href="">None</a></td>
+                                
+                                <td class="novel-name"><a href="/truyen/moi-ngay-khi-luc-cua-ta-tang-truong-100-can/">Mỗi Ngày, Khí Lực Của Ta Tăng Trưởng 100 Cân.</a></td>
+                                
+                                <td><a href="/truyen/moi-ngay-khi-luc-cua-ta-tang-truong-100-can/chuong-793.html">Chương 793: Chiến Bán Thánh 2</a></td>
+                                
+                                
+                                <td><a href="/tac-gia/giang-ho-phong-tran-khach/">Giang Hồ Phong Trần Khách </a></td>
+                                
+                                <td><time class="timeago" datetime="2024-06-01T14:33:04.412074+07:00"></time></td>
+                            </tr>
+                            
+                            </tbody>
+                        </table>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container full-banner mt-3">
+    
+
+    
+        
+            <div class="tkb mb-2" style="width: 1110px; height: auto;">
+<a href="https://truyenyy.link/apps/" target="_blank" rel="noopener" aria-label="desktop-mid2-home-banner">
+<img class="lazy loaded" data-src="https://yymedia.codeprime.net/media/bnr/5315f1f383.png" alt="" style="width: 1110px; height: auto;" src="https://yymedia.codeprime.net/media/bnr/5315f1f383.png" data-was-processed="true">
+</a>
+</div>
+
+<ul class="list-unstyled list-inline" style="font-size:11px;color:#888">
+    <li class="list-inline-item">Liên kết:</li>
+    <ll class="list-inline-item"><a href="https://caytruyen.vn/" title="caytruyen.vn" target="_blank" rel="noopener noreferrer" style="color:#888;">caytruyen</a></li>
+</ul>
+        
+    
+
+</div>
+
+
+
+    <script type='application/ld+json'>
+        {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "@id": "https://truyenyy.pro/#webpage",
+            "url": "https://truyenyy.pro/",
+            "name": "TruyenYY"
+        }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@id": "https://truyenyy.pro/#organization",
+        "@type": "Organization",
+        "name": "TruyenYY",
+        "url": "https://truyenyy.pro/",
+        "logo": "https://cdnx.truyenyy.pro/truyenyy/logos/TruyenYY-Icon-1024.png",
+        "sameAs": [
+          "https://www.facebook.com/truyenyy",
+          "https://www.youtube.com/channel/UCCPMBNjy0rS9w1v_jo0nZeQ",
+          "https://twitter.com/truyenyy"
+        ]
+      }
+    </script>
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "@id": "https://truyenyy.pro/#website",
+          "url": "https://truyenyy.pro/",
+          "name": "TruyenYY",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://truyenyy.pro/tim-kiem/nang-cao/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+          }
+        }
+    </script>
+
+
+
+
+<footer class="site-footer">
+    
+    <div class="more-search">
+        <div class="container">
+            <form class="form-inline" action="/tim-kiem/nang-cao/">
+                <small class="mr-2">Vẫn chưa tìm được truyện ưng ý?</small>
+
+                <label for="inlineFormGenre">
+                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormGenre" name="genre" aria-label="Lựa chọn thể loại">
+                        <option selected value="">Thể Loại</option>
+                        
+                        
+                        <option value="13">Huyền Huyễn</option>
+                        
+                        <option value="10">Kiếm Hiệp</option>
+                        
+                        <option value="15">Lịch Sử</option>
+                        
+                        <option value="6">Ngôn Tình</option>
+                        
+                        <option value="4">Tiên Hiệp</option>
+                        
+                        <option value="17">Dị Giới</option>
+                        
+                        <option value="11">Đô Thị</option>
+                        
+                        <option value="33">Huyền Ảo</option>
+                        
+                        <option value="22">Trinh Thám</option>
+                        
+                        <option value="49">Cổ Đại</option>
+                        
+                        <option value="53">Hệ Thống</option>
+                        
+                        <option value="20">Khoa Huyễn</option>
+                        
+                        <option value="16">Quân Sự</option>
+                        
+                        <option value="5">Võng Du</option>
+                        
+                        <option value="7">Xuyên Không</option>
+                        
+                        <option value="37">Cổ Tiên Hiệp</option>
+                        
+                        <option value="21">Đam Mỹ</option>
+                        
+                        <option value="39">Huyền Bí</option>
+                        
+                        <option value="56">Kỳ Huyễn</option>
+                        
+                        <option value="35">Linh Dị</option>
+                        
+                        <option value="26">Ma Pháp</option>
+                        
+                        <option value="31">Mạt Thế</option>
+                        
+                        <option value="41">Quan Trường</option>
+                        
+                        <option value="54">Thể Thao</option>
+                        
+                        <option value="3">Tu Chân</option>
+                        
+                        <option value="44">Hiện Đại</option>
+                        
+                        <option value="19">Sắc Hiệp</option>
+                        
+                        <option value="23">Bách Hợp</option>
+                        
+                        <option value="38">Bình Đạm</option>
+                        
+                        <option value="32">Cạnh Kỹ</option>
+                        
+                        <option value="87">Cổ Đại Ngôn Tình</option>
+                        
+                        <option value="63">Cung Đấu</option>
+                        
+                        <option value="62">Đặc Sắc</option>
+                        
+                        <option value="96">Dã Sử</option>
+                        
+                        <option value="45">Điền Văn</option>
+                        
+                        <option value="12">Dị Năng</option>
+                        
+                        <option value="61">Đoản Văn</option>
+                        
+                        <option value="30">Đồng Nhân</option>
+                        
+                        <option value="60">Đông Phương</option>
+                        
+                        <option value="64">Gia Đấu</option>
+                        
+                        <option value="58">Hài Hước</option>
+                        
+                        <option value="90">Hiện Đại Ngôn Tình</option>
+                        
+                        <option value="50">Hồng Hoang</option>
+                        
+                        <option value="89">Huyền Huyễn Ngôn Tình</option>
+                        
+                        <option value="85">Huyền Nghi</option>
+                        
+                        <option value="91">Huyền Nghi Thần Quái</option>
+                        
+                        <option value="65">Khác</option>
+                        
+                        <option value="92">Khoa Huyễn Không Gian</option>
+                        
+                        <option value="86">Kỳ Ảo</option>
+                        
+                        <option value="88">Lãng Mạn Thanh Xuân</option>
+                        
+                        <option value="69">Light Novel</option>
+                        
+                        <option value="48">Ngược</option>
+                        
+                        <option value="52">Nhàn Hưu</option>
+                        
+                        <option value="84">Nhiều Converter</option>
+                        
+                        <option value="25">Nữ Cường</option>
+                        
+                        <option value="36">Nữ Hiệp</option>
+                        
+                        <option value="28">Nữ Phụ</option>
+                        
+                        <option value="51">Phiêu Lưu</option>
+                        
+                        <option value="80">Phương Tây</option>
+                        
+                        <option value="81">Sắc</option>
+                        
+                        <option value="59">Sủng</option>
+                        
+                        <option value="67">Thám Hiểm</option>
+                        
+                        <option value="42">Thương Nghiệp</option>
+                        
+                        <option value="94">Tiên Hiệp Kỳ Duyên</option>
+                        
+                        <option value="14">Tiểu thuyết</option>
+                        
+                        <option value="29">Tiểu Thuyết Khác</option>
+                        
+                        <option value="40">Tiểu Thuyết Lãng Mạn</option>
+                        
+                        <option value="66">Tiểu Thuyết Phương Tây</option>
+                        
+                        <option value="24">Trọng Sinh</option>
+                        
+                        <option value="34">Trùng Sinh</option>
+                        
+                        <option value="9">Truyện Ma</option>
+                        
+                        <option value="43">Truyện Ngắn</option>
+                        
+                        <option value="46">Truyện Tây Phương</option>
+                        
+                        <option value="8">Truyện Teen</option>
+                        
+                        <option value="47">Truyện Tình Cảm</option>
+                        
+                        <option value="68">Văn Học Việt Nam</option>
+                        
+                        <option value="82">Việt Nam</option>
+                        
+                        <option value="55">Võ Hiệp</option>
+                        
+                        <option value="95">Võ hiệp tiên hiệp</option>
+                        
+                        <option value="57">Võ Thuật</option>
+                        
+                        <option value="83">Xuyên Nhanh</option>
+                        
+                    </select>
+                </label>
+
+                <label for="inlineFormStatus">
+                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormStatus" name="status" aria-label="Lựa chọn trạng thái của truyện">
+                        <option selected value="C">Còn Tiếp</option>
+                        <option value="F">Hoàn Thành</option>
+                        <option value="D">Chưa Hoàn</option>
+                    </select>
+                </label>
+
+                <label for="inlineFormPrice">
+                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormPrice" name="vip" aria-label="Có thu phí hay không?">
+                        <option selected value="no">Miễn Phí</option>
+                        <option value="yes">Thu Phí</option>
+                    </select>
+                </label>
+
+                <label for="inlineFormWordCount">
+                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormWordCount" name="wordcount" aria-label="Lựa chọn số chữ">
+                        <option selected value="">Số Chữ</option>
+                        <option value="2M">Trên 2 triệu chữ</option>
+                        <option value="1M">1 triệu - 2 triệu</option>
+                        <option value="200K">20 vạn - 1 triệu</option>
+                        <option value="50K">5 vạn - 20 vạn</option>
+                    </select>
+                </label>
+
+                <label for="inlineFormTranslation">
+                    <select class="form-control mb-2 mr-sm-2 mb-sm-0" id="inlineFormTranslation" name="translated" aria-label="Lựa chọn kiểu thích thuật">
+                        <option selected value="">Dịch Thuật</option>
+                        <option value="✓">Dịch Thuần Việt</option>
+                        <option>Gồm Cả Convert</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="btn btn-primary">Tìm Kiếm</button>
+            </form>
+        </div>
+    </div>
+    
+
+    
+
+<div class="container mt-4">
+    <ul class="mobile-apps list-inline pb-2 mb-0">
+        <li class="list-inline-item"><a href="https://truyenyy.app.link/" aria-label="TruyenYY iOS App"><i class="iconfont icon-apple"></i></a></li>
+        <li class="list-inline-item"><a href="https://truyenyy.app.link/" aria-label="TruyenYY Android App"><i class="iconfont icon-android"></i></a></li>
+    </ul>
+    <ul class="list-inline links">
+        <li class="list-inline-item"><a href="/about/">Giới Thiệu</a></li>
+        <li class="list-inline-item"><a href="/contact/">Liên Hệ</a></li>
+        <li class="list-inline-item"><a href="/page/noi-quy-website/">Điều Khoản Dịch Vụ</a></li>
+        <li class="list-inline-item"><a href="/page/quy-dinh-rieng-tu/">Quy Định Riêng Tư</a></li>
+        <li class="list-inline-item"><a href="/page/van-de-ban-quyen/">Vấn Đề Bản Quyền</a></li>
+        <li class="list-inline-item"><a href="https://truyenyy.pro/sitemap.xml">Sitemap</a></li>
+        <li class="list-inline-item"><a href="/page/tai-logo-truyenyy/">Tải Logo TruyenYY</a></li>
+    </ul>
+</div>
+
+<a href="#" class="back-top" style="display: none;"><i class="iconfont icon-top"></i></a>
+
+<hr>
+<div class="container">
+    <div class="d-flex pt-md">
+        <div class="intro-text">
+            <a href="/" class="logo">
+                <img src="https://yystatic.codeprime.net/desktop/img/TruyenYY-Web-Logo.svg" alt="TruyenYY logo">
+            </a>
+            <div class="pb-1 ml-auto mr-auto small mt-2">
+                <span>Chào mừng bạn đến với <a href="https://truyenyy.pro/" style="color: #212529;"><strong>TruyenYY - Thế Giới Truyện Tiên Hiệp Huyền Ảo</strong></a></span>.
+                TruyenYY (TruyệnYY hay gọi tắt "YY") là một <em>nền tảng nội dung số</em> trên internet,
+                nơi thành viên có thể tự do xuất bản những nội dung tiếng Việt như: Tiểu thuyết, light novel,
+                truyện ngắn hoặc thơ văn khác. Với những chức năng được cải tiến liên tục, TruyenYY sẽ
+                mang lại cho <b>Tác giả sáng tác truyện, Dịch giả đăng truyện và Người đọc truyện online</b> những trải nghiệm tuyệt vời nhất.
+                
+            </div>
+        </div>
+        <div class="flex-grow-1 row">
+            
+            
+                <div class="col-4">
+                    <ul class="list-unstyled small">
+                        
+                            <li><a href="/truyen-huyen-huyen/">Truyện Huyền Huyễn</a></li>
+                        
+                            <li><a href="/truyen-kiem-hiep/">Truyện Kiếm Hiệp</a></li>
+                        
+                            <li><a href="/truyen-lich-su/">Truyện Lịch Sử</a></li>
+                        
+                            <li><a href="/truyen-ngon-tinh/">Truyện Ngôn Tình</a></li>
+                        
+                            <li><a href="/truyen-tien-hiep/">Truyện Tiên Hiệp</a></li>
+                        
+                            <li><a href="/truyen-di-gioi/">Truyện Dị Giới</a></li>
+                        
+                            <li><a href="/truyen-do-thi/">Truyện Đô Thị</a></li>
+                        
+                            <li><a href="/truyen-huyen-ao/">Truyện Huyền Ảo</a></li>
+                        
+                    </ul>
+                </div>
+            
+                <div class="col-4">
+                    <ul class="list-unstyled small">
+                        
+                            <li><a href="/truyen-trinh-tham/">Truyện Trinh Thám</a></li>
+                        
+                            <li><a href="/truyen-co-dai/">Truyện Cổ Đại</a></li>
+                        
+                            <li><a href="/truyen-he-thong/">Truyện Hệ Thống</a></li>
+                        
+                            <li><a href="/truyen-khoa-huyen/">Truyện Khoa Huyễn</a></li>
+                        
+                            <li><a href="/truyen-quan-su/">Truyện Quân Sự</a></li>
+                        
+                            <li><a href="/truyen-vong-du/">Truyện Võng Du</a></li>
+                        
+                            <li><a href="/truyen-xuyen-khong/">Truyện Xuyên Không</a></li>
+                        
+                            <li><a href="/truyen-co-tien-hiep/">Truyện Cổ Tiên Hiệp</a></li>
+                        
+                    </ul>
+                </div>
+            
+                <div class="col-4">
+                    <ul class="list-unstyled small">
+                        
+                            <li><a href="/truyen-dam-my/">Truyện Đam Mỹ</a></li>
+                        
+                            <li><a href="/truyen-huyen-bi/">Truyện Huyền Bí</a></li>
+                        
+                            <li><a href="/truyen-ky-huyen/">Truyện Kỳ Huyễn</a></li>
+                        
+                            <li><a href="/truyen-linh-di/">Truyện Linh Dị</a></li>
+                        
+                            <li><a href="/truyen-huyen-huyen-ma-phap/">Truyện Ma Pháp</a></li>
+                        
+                            <li><a href="/truyen-mat-the/">Truyện Mạt Thế</a></li>
+                        
+                            <li><a href="/truyen-quan-truong/">Truyện Quan Trường</a></li>
+                        
+                            <li><a href="/truyen-the-thao/">Truyện Thể Thao</a></li>
+                        
+                    </ul>
+                </div>
+            
+        </div>
+
+    </div>
+    <div class="row align-items-center justify-content-md-between py-4 mt-2 delimiter-top">
+        <div class="col-6">
+            <div class="copyright small font-weight-bold text-center text-md-left">
+                &copy; 2012-2024 CodePrime. All Rights Reserved.
+            </div>
+            <div class="mt-2">
+                <a href="https://codeprime.net"><img data-src="https://yystatic.codeprime.net/img/CodePrime.svg" alt="CodePrime" height="20" width="123" class="lazy"></a>
+            </div>
+        </div>
+        <div class="col-6">
+            <ul class="nav justify-content-center justify-content-md-end mt-3 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/TruyenYY/" target="_blank" data-toggle="tooltip" title="Facebook Fanpage" rel="noreferrer">
+                        <img data-src="https://yystatic.codeprime.net/social-icons/facebook.svg" class="lazy" alt="Facebook" style="width: 24px; height: 24px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/groups/YYHoi/" target="_blank" data-toggle="tooltip" title="YY Hội" rel="noreferrer">
+                        <img data-src="https://yystatic.codeprime.net/social-icons/group.svg" class="lazy" alt="YY Hội" style="width: 24px; height: 24px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/TruyenYY/" target="_blank" data-toggle="tooltip" title="TruyenYY tại Twitter" rel="noreferrer">
+                        <img data-src="https://yystatic.codeprime.net/social-icons/twitter.svg" class="lazy" alt="Twitter" style="width: 24px; height: 24px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.youtube.com/TruyenYYOfficial" target="_blank" data-toggle="tooltip" title="Kênh Youtube Chính Thức TruyenYY" rel="noreferrer">
+                        <img data-src="https://yystatic.codeprime.net/social-icons/youtube.svg" class="lazy" alt="Youtube" style="width: 24px; height: 24px;">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://www.soundcloud.com/TruyenYY" target="_blank" data-toggle="tooltip" title="Kênh SoundClound Chính Thức TruyenYY" rel="noreferrer">
+                        <img data-src="https://yystatic.codeprime.net/social-icons/soundcloud.svg" class="lazy" alt="SoundCloud" style="width: 24px; height: 24px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</footer>
+
+
+
+
+    <script>
+        if ($('.swiper-container .swiper-slide').length) {
+            var swiper = new Swiper('.swiper-container', {
+                effect: 'coverflow',
+                grabCursor: false,
+                centeredSlides: true,
+                slidesPerView: 'auto',
+                loop: true,
+                autoplay: {
+                    delay: 4000,
+                    disableOnInteraction: false,
+                },
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true
+                }
+            });
+
+            $('.swiper-container').on('click', '.swiper-slide', function (e) {
+                e.stopPropagation();
+                var index = $(this).index();
+                if (swiper.activeIndex === index + 1) {
+                    e.preventDefault();
+                    swiper.slidePrev();
+                }
+                else if (swiper.activeIndex === index - 1) {
+                    e.preventDefault();
+                    swiper.slideNext();
+                }
+            });
+
+            swiper.on('slideChange', function () {
+                var ele = $(swiper.slides[swiper.activeIndex]);
+                var t = ele.data("title");
+                var a = ele.data("author");
+                var u = ele.data("url");
+                var d = ele.data("desc");
+                $('.mini-swiper .book-title > a').text(t).attr('href', u);
+                $('.mini-swiper .book-author').text(a);
+                $('.mini-swiper .book-desc').text(d);
+                $('.mini-swiper .btn-primary').attr('href', u);
+            });
+        }
+    </script>
+
+
+
+    <div id="id_feedback_button">
+        <a href="https://m.me/TruyenYY" target="_blank" rel="noreferrer" class="btn">
+            <svg viewBox="0 0 512 512" data-icon="messender" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024C512,106.112,397.376,0,256,0z" style="fill: rgb(30, 136, 229);"></path><polygon points="281.44,319.2 216.256,249.664 89.056,319.2 228.96,170.656 295.744,240.192 421.376,170.656" style="fill: rgb(250, 250, 250);"></polygon></svg>
+            <span class="ml-1">Liên Hệ QTV</span>
+        </a>
+    </div>
+    <style>
+        #id_feedback_button {
+            position: fixed;
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        #id_feedback_button .btn {
+            color: #333;
+            background-color: #ddd;
+            transform: rotate(-90deg);
+            float: right;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            opacity: 0.8;
+        }
+        #id_feedback_button .btn:hover {
+            opacity: 1;
+            background-color: #ccc;
+        }
+    </style>
+
+
+<div id='async-js-holder'></div>
+<script>
+    (function () {
+        function loadFont(url) {
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', url, true);
+            xhr.onreadystatechange = () => {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    let css = xhr.responseText;
+                    css = css.replace(/}/g, 'font-display: swap; }');
+
+                    const head = document.getElementsByTagName('head')[0];
+                    const style = document.createElement('style');
+                    style.appendChild(document.createTextNode(css));
+                    head.appendChild(style);
+                }
+            };
+            xhr.send();
+        }
+        loadFont('https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700,700i&amp;subset=latin-ext,vietnamese');
+        function getScript(a) {
+            let b = document.getElementById('async-js-holder'), c = document.createElement('script');
+            c.src = a; b.append(c)
+        }
+        getScript("https://yystatic.codeprime.net/desktop/js/desktop-components.55d9b586.js"); //desktopBaseJs
+    })();
+</script>
+
+
+
+    
+        
+            <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-6SE80VQKJ2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-6SE80VQKJ2');
+</script>
+        
+    
+
+
+
+
+    <div class="cookie-consent" id="id_cookie_consent_dialog" style="display: none;">
+        <div class="">
+            <span>TruyenYY dùng cookies để cung cấp trải nghiệm tốt hơn cho người đọc truyện</span>
+            <a href="https://truyenyy-pages.codeprime.net/chinh-sach-cookies.html" target="_blank" rel="noreferrer noopener">Chính sách</a>
+        </div>
+        <div>
+            <div class="d-flex">
+                <button class="btn btn-secondary mr-2" id="id_close_cookie_consent">Đóng</button>
+                <button class="btn btn-primary text-nowrap" id="id_accept_cookie_consent">Đồng ý</button>
+            </div>
+        </div>
+    </div>
+    <style>
+        .cookie-consent {
+            display: flex;
+            position: fixed;
+            z-index: 10000;
+            left: 10px;
+            bottom: 10px;
+            background: #fff;
+            border-radius: 1rem;
+            padding: 1rem;
+            box-shadow: 0 0 3px #0001;
+            max-width: 600px;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+    <script>
+        $(function () {
+            const accept = $('#id_accept_cookie_consent')
+            const close = $('#id_close_cookie_consent')
+            const dialog = $('#id_cookie_consent_dialog')
+            const cookiesName = 'truyenyy-cookies-consent'
+
+            if (Cookies.get(cookiesName) !== 'accepted') {
+                dialog.show()
+            }
+
+            accept.click(function () {
+                Cookies.set(cookiesName, 'accepted', { expires: 60 })
+                dialog.hide()
+            })
+
+            close.click(function () {
+                dialog.hide()
+            })
+        })
+    </script>
+
+</body>
+</html>

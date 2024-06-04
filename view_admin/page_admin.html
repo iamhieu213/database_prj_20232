@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang Quản Trị</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css">
+
+    <style>
+        body {
+            background-color: #f0f8ff; /* Màu xanh nước biển nhạt */
+            padding: 20px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .ui.container {
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 20px;
+        }
+        .segment {
+            margin-bottom: 40px;
+        }
+        .vertical.menu {
+            position: fixed;
+            left: 20px;
+            top: 80px;
+            height: calc(100% - 100px);
+            overflow-y: auto;
+            background-color: #e6f7ff; /* Màu xanh nước biển nhạt hơn */
+        }
+        .main-content {
+            margin-left: 220px;
+            padding-top: 20px;
+        }
+        .user-info {
+            position: fixed;
+            left: 20px; /* Di chuyển ảnh admin sang trái */
+            top: 20px;
+            display: flex;
+            align-items: center;
+            z-index: 100;
+        }
+        .user-info img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+        .right-menu {
+            position: fixed;
+            right: 20px;
+            top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <img src="../img/logo.png" alt="Logo" class="logo" height="60">
+    <div class="ui container">
+        <div class="user-info">
+        </div>
+        <div class="right-menu">
+            <a href="../view_admin/page_admin.html">Home</a> | 
+            <a href="#">Đăng Xuất</a>
+        </div>
+    </div>
+    <div class="ui vertical menu">
+        <div class="item">
+            <div class="header" style="font-size: 20px; font-weight: bold;">Quản Lý</div>
+            <div class="menu">
+                <div class="item">
+                    <div class="title" style="font-size: 18px;">Quản Lí Người Dùng</div>
+                    <div class="content">
+                        <a class="item" style="font-size: 16px;" href="../view_admin/quanlinguoidung.html">Thông tin người dùng</a>
+                        <a class="item" style="font-size: 16px;" href="../view_admin/quanlinguoidung.html">Xóa Người Dùng</a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="title" style="font-size: 18px;">Quản Lí Sách</div>
+                    <div class="content">
+                        <a class="item" style="font-size: 16px;" href="../view_admin/book.html">Quản lí sách</a>
+                        <a class="item" style="font-size: 16px;" href="../view_admin/more_book.html">Thêm Sách</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="ui segment">
+            <h2 class="ui header" style="font-size: 24px;">Truyện Tranh Được Đọc Nhiều Nhất</h2>
+            <canvas id="topComicsChart" width="400" height="200"></canvas>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+    <script>
+        // Đồ thị truyện tranh được đọc nhiều nhất
+        var ctx = document.getElementById('topComicsChart').getContext('2d');
+        var topComicsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Truyện A', 'Truyện B', 'Truyện C', 'Truyện D', 'Truyện E'],
+                datasets: [{
+                    label: 'Lượt Đọc',
+                    data: [1500, 2000, 1800, 2200, 1700],
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)', // Màu xanh dương nhạt
+                    borderColor: 'rgba(54, 162, 235, 1)', // Màu xanh dương
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    yAxes: [{
+                        ticks: {
+                            beginAtZero: true
+                        }
+                    }]
+                }
+            }
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi Tiết Truyện</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="stylesheet" href="../css/style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e2f5fc;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+        .container {
+            background-color: #f4f4f5; /* Màu xám nhạt */
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+        .book-image {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .book-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .book-details {
+            flex: 2;
+        }
+        .book-details h2 {
+            margin-bottom: 20px;
+            color: #2c3e50;
+        }
+        .book-details p {
+            margin-bottom: 10px;
+            line-height: 1.6;
+            color: #7f8c8d;
+        }
+        .search-bar-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60%; /* Độ rộng mở rộng */
+        }
+        .search-bar {
+            width: 100%;
+            padding: 10px; /* Tăng kích thước của thanh tìm kiếm */
+            font-size: 16px; /* Tăng cỡ chữ */
+            border-radius: 20px; /* Làm tròn viền */
+            border: none;
+        }
+        .home-link-right {
+            font-weight: bold;
+            text-decoration: none;
+            color: #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .home-link-right img {
+            border-radius: 50%; /* Làm tròn hình ảnh */
+        }
+        .genre {
+            margin-bottom: 20px;
+        }
+        .genre ul {
+            padding: 0;
+            list-style-type: none;
+        }
+        .genre ul li {
+            display: inline-block;
+            margin-right: 10px;
+        }
+        .genre ul li a {
+            text-decoration: none;
+            color: #333;
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .genre ul li a:hover {
+            background-color: #aeaeae;
+            color: #fff;
+        }
+        .read-button {
+            display: inline-block;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .read-button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="logo">
+        <img src="../img/logo.png" alt="logo" height="100" style="border-radius: 50%;">
+    </div>
+    <div class="search-bar-container">
+        <input type="text" id="searchInput" class="form-control mb-3 search-bar" placeholder="Tìm kiếm truyện...">
+    </div>
+    <a href="#" class="home-link-right">Trang chủ
+    </a>
+</div>
+
+
+<div class="container mx-auto">
+    <div class="book-image">
+        <img src="../img/logo.png" alt="Tên Truyện" class="img-fluid" >
+    </div>
+    <div class="book-details">
+        <h2 id="book-title">Tên Truyện</h2>
+        <p id="book-author">Tác giả: Tên Tác Giả</p>
+        <p id="book-publisher">Nhà xuất bản: Tên Nhà Xuất Bản</p>
+        <p id="book-year">Năm xuất bản: Năm</p>
+        <p id="book-description">Mô tả: Đây là phần mô tả chi tiết về truyện. Nội dung mô tả này có thể bao gồm tóm tắt về nội dung của truyện, điểm nổi bật, đánh giá từ các độc giả khác, và bất kỳ thông tin hữu ích nào khác mà bạn muốn chia sẻ.</p>
+        <div class="genre">
+            <p>Thể loại:</p>
+            <ul>
+                <li><a href="#">Thể loại 1</a></li>
+                <li><a href="#">Thể loại 2</a></li>
+                <li><a href="#">Thể loại 3</a></li>
+                <!-- Thêm các thể loại khác nếu cần -->
+            </ul>
+        </div>
+        <a href="#" class="read-button">Đọc Truyện</a>
+    </div>
+</div>
+
+<!-- Bootstrap JS Bundle with Popper -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+<!-- JavaScript to dynamically populate book details -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const bookData = {
+            title: 'Tên Truyện',
+            author: 'Tên Tác Giả',
+            publisher: 'Tên Nhà Xuất Bản',
+            year: 'Năm Xuất Bản',
+            description: 'Mô tả: Đây là phần mô tả chi tiết về truyện. Nội dung mô tả này có thể bao gồm tóm tắt về nội dung của truyện, điểm nổi bật, đánh giá từ các độc giả khác, và bất kỳ thông tin hữu ích nào khác mà bạn muốn chia sẻ.',
+            imageUrl: 'link-to-book-image.jpg',
+            genres: ['Thể loại 1', 'Thể loại 2', 'Thể loại 3'] // Danh sách các thể loại của truyện
+        };
+
+        document.getElementById('book-title').textContent = bookData.title;
+        document.getElementById('book-author').textContent = 'Tác giả: ' + bookData.author;
+        document.getElementById('book-publisher').textContent = 'Nhà xuất bản: ' + bookData.publisher;
+        document.getElementById('book-year').textContent = 'Năm xuất bản: ' + bookData.year;
+        document.getElementById('book-description').textContent = bookData.description;
+        document.querySelector('.book-image img').src = bookData.imageUrl;
+        
+        // Tạo danh sách thể loại
+        const genreList = document.createElement('ul');
+        genreList.classList.add('genre-list');
+        bookData.genres.forEach(genre => {
+            const genreItem = document.createElement('li');
+            const genreLink = document.createElement('a');
+            genreLink.href = '#';
+            genreLink.textContent = genre;
+            genreItem.appendChild(genreLink);
+            genreList.appendChild(genreItem);
+        });
+        document.querySelector('.genre').appendChild(genreList);
+    });
+</script>
+</body>
+</html>
